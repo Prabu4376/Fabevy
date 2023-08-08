@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WhatsApp Link</title>
+</head>
+<body>
+<script type="text/javascript">
+	let linkData = [
+		{
+			idParam:"fabWeb01",
+			waNumber:916381244191,
+			text:"Tell me more about your 4 months IT training."
+		},
+		{
+			idParam:"fabfrontend",
+			waNumber:916381244191,
+			text:"Tell me more about your Front-End Developer courses and share futher details."
+		},
+		{
+			idParam:"fabbackend",
+			waNumber:916381244191,
+			text:"Tell me more about your Back-End Developer Masterclass and share futher details."
+		},
+		{
+			idParam:"fabapitesting",
+			waNumber:916381244191,
+			text:"Tell me more about your API Testing using Python courses and share futher details."
+		},
+		{
+			idParam:"fabdigital",
+			waNumber:916381244191,
+			text:"Tell me more about your Digital Marketing courses and share futher details."
+		},
+		{
+			idParam:"fabfullstack",
+			waNumber:916381244191,
+			text:"Tell me more about your Full-Stack Developer courses and share futher details."
+		},
+		{
+			idParam:"fabmanualtesting",
+			waNumber:916381244191,
+			text:"Tell me more about your Manual Testing course and share futher details."
+		},
+		{
+			idParam:"fabuiux",
+			waNumber:916381244191,
+			text:"Tell me more about your UI/UX Designer course and share futher details."
+		},
+		{
+			idParam:"fabbackendevent",
+			waNumber:916381244191,
+			text:"Tell me more about your Back-End Developer Masterclass Event and share futher details."
+		},
+	]
+	let urlParam = location.search;
+	let getUrl = new URLSearchParams(urlParam);
+	for(const key of getUrl.keys()){
+		let findUrl = linkData.find((req)=> req.idParam === key);
+		if(findUrl){
+			window.location.href = "https://api.whatsapp.com/send?phone="+findUrl.waNumber+"&text="+findUrl.text;
+		}
+	}
+</script>
+</body>
+</html>
