@@ -705,6 +705,7 @@ function validateForm(req){
                 name: getNameVal(req+"-name"),
                 email: getNameVal(req+"-email"),
                 mobileNo: getNameVal(req+"-phone"),
+                city: getNameVal(req+"-city"),
                 lookingFor: getNameVal(req+"-course"),
                 page:getNameVal(req+"-page")
             }
