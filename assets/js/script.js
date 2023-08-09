@@ -639,7 +639,6 @@ function validateForm(req){
         for (var i=0; i<nodes.length; i++){
             if(nodes[i].value.length == 0){
                 document.getElementsByClassName(req+"-email-err")[0].classList.remove('invalid-input')
-                // console.log("err")
             }
             else{
                 if (nodes[i].value == "" || !(emailPattern.test(nodes[i].value))){
@@ -670,10 +669,9 @@ function validateForm(req){
     
 
     if(isValidInputs){
-        onSubmitInputs();
+        onSubmitInputs()
         mobileValidate();
         emailValidate();
-        
     }
 
     
@@ -691,6 +689,7 @@ function validateForm(req){
                 message: getNameVal(req+"-message"),
                 page:getNameVal(req+"-page")
             }
+            console.log(inputsData)
         }else if(req === "enquiry"){
             inputsData = {
                 name: getNameVal(req+"-name"),
@@ -700,6 +699,7 @@ function validateForm(req){
                 message: getNameVal(req+"-message"),
                 page:getNameVal(req+"-page")
             }
+            console.log(inputsData)
         }else if(req === "enquire-consulation"){
             inputsData = {
                 name: getNameVal(req+"-name"),
@@ -709,6 +709,7 @@ function validateForm(req){
                 lookingFor: getNameVal(req+"-course"),
                 page:getNameVal(req+"-page")
             }
+            console.log(inputsData)
         }
         submitForm(inputsData, req);
     }
