@@ -464,11 +464,11 @@ function submitForm(inptData, getForm){
 
     if(getForm === "enquire-consulation"){
 
-        console.log(getForm)
+        // console.log(getForm)
 
         let {name, email, mobileNo, city, lookingFor, page} = inptData;
 
-        console.log(city)
+        // console.log(city)
 
         getClass(getForm+"-btn").setAttribute("disabled", true);
 
@@ -627,7 +627,7 @@ function validateForm(req){
     
     let sylbsmobileNo = document.getElementById(req+"-mobileNo");
     let inputsElmt = document.getElementsByClassName(req+"-inpt").value;
-    let isValidInputs = true;
+    let isValidInputs = false;
     if(isFrmValid){
         emailValidate();
         mobileValidate();
@@ -644,26 +644,34 @@ function validateForm(req){
                 if (nodes[i].value == "" || !(emailPattern.test(nodes[i].value))){
                     document.getElementsByClassName(req+"-email-err")[0].classList.add('invalid-input')
                     return;
+                    
                 }else{
                     document.getElementsByClassName(req+"-email-err")[0].classList.remove('invalid-input')
+                    isValidInputs = true;
                 }
             }
         }
     }
 
     function mobileValidate(){
-        if(sylbsmobileNo.value.length == 0){
-            document.getElementsByClassName(req+"-no-err")[0].classList.remove("invalid-input");   
+        var nodes = document.querySelectorAll(".request-form input[type=number]");
+        var mobilePattern = /^[0-9]{10}$/;
+        for (var i=0; i<nodes.length; i++){
+            if(nodes[i].value.length == 0){
+                document.getElementsByClassName(req+"-no-err")[0].classList.remove('invalid-input')
+            }
+            else{
+                if (nodes[i].value == "" || !(mobilePattern.test(nodes[i].value))){
+                    document.getElementsByClassName(req+"-no-err")[0].classList.add('invalid-input')
+                    isValidInputs = false;
+                    return;
+                    
+                }else{
+                    document.getElementsByClassName(req+"-no-err")[0].classList.remove('invalid-input')
+                    isValidInputs = true;
+                }
+            }
         }
-        if(sylbsmobileNo.value.length >= 1){
-            document.getElementsByClassName(req+"-no-err")[0].classList.add("invalid-input");   
-        }
-        if(sylbsmobileNo.value.length == 10 ){
-            document.getElementsByClassName(req+"-no-err")[0].classList.remove("invalid-input");   
-        }
-        // else{
-        //     document.getElementsByClassName(req+"-no-err")[0].classList.add("invalid-input");
-        // }
     }
 
     
@@ -689,7 +697,6 @@ function validateForm(req){
                 message: getNameVal(req+"-message"),
                 page:getNameVal(req+"-page")
             }
-            console.log(inputsData)
         }else if(req === "enquiry"){
             inputsData = {
                 name: getNameVal(req+"-name"),
@@ -699,7 +706,6 @@ function validateForm(req){
                 message: getNameVal(req+"-message"),
                 page:getNameVal(req+"-page")
             }
-            console.log(inputsData)
         }else if(req === "enquire-consulation"){
             inputsData = {
                 name: getNameVal(req+"-name"),
@@ -709,7 +715,6 @@ function validateForm(req){
                 lookingFor: getNameVal(req+"-course"),
                 page:getNameVal(req+"-page")
             }
-            console.log(inputsData)
         }
         submitForm(inputsData, req);
     }

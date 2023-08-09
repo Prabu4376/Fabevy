@@ -1,1261 +1,2530 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
-    <title>Back-end Developer Course | Fabevy</title>
-    <script src="https://kit.fontawesome.com/1019926d45.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- Owl Stylesheets -->
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="assets/css/flags.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MSTB654');</script>
-<!-- End Google Tag Manager -->
-    
-    <!-- Meta Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '454835103199157');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=454835103199157&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
-</head>
-<body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MSTB654"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    
-    <header class="topheader">
-        <div class="container">
-            <div class="row">
-
-                <!-- Logo -->
-                <div class="col-6 col-sm-3 logo-sec">
-                    <a href="index.html" class="logo">
-                        <img src="assets/images/fabevy-logo-landscape.png" alt="">
-                    </a>
-                </div>
-
-                <!-- Menu toggle btn -->
-                <div class="menu-btn d-lg-none" id="menu-toggle-btn">
-                    <div class="btn-line1"></div>
-                    <div class="btn-line2"></div>
-                    <div class="btn-line3"></div>
-                </div>
-                <!-- Menu toggle btn ends -->
-
-                <!-- Header menu section -->
-                <div class="col-sm-9 d-none d-lg-block">
-                    <nav class="navbar navbar-expand-lg justify-content-end">
-                        <ul class="navbar-nav ">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="about.html">About</a>
-                            </li>
-                            <!-- <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="values.html">Values</a>
-                            </li> -->
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="job-guarantee-programs.html">Job
-                                    Guarantee Programs</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <!-- Header menu section ends -->
-            </div>
-        </div>
-    </header>
-    <!-- Hader menu  mobile -->
-    <header class="header-menu-mb d-lg-none">
-        <div class="menu-bg"></div>
-        <nav class="navbar-mb">
-           
-            <ul class="navbar-nav-mb">
-                <li>
-                    <a class="nav-link active" aria-current="page" href="index.html">Home <i class="fas fa-angle-right"></i></a>
-                </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li> -->
-                <li class="nav-drop-link">
-                    <a class="nav-link nav-link-mb" href="#" id="navbarDropdown-mb" >About </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="job-guarantee-programs.html">Job Guarantee Programs</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
-                </li>
-            </ul>
-           
-           
-        </nav>
-                
-    </header>
-    <!-- Hader menu mobile ends-->
-
-    <!-- Top Header Banner -->
-    <section class="banner-sec page-banner bg-prime " >
-        <div class="container pd-btm-80">
-            <div class="row align-items-start">
-                <div class="col-sm-12 col-lg-7 pd-tp-40 pd-btm-40">
-                    <div class="page-banner-content">
-                        <h2 class="white">Back-End Developer</h2>
-                        <div class="txt-high-line">
-                            With a 100% Job Guarantee
-                        </div>
-                        
-                        <p class="mr-btm-40">Back-end development refers to the server-side development of web applications. The back end is responsible for the behind-the-scenes functionality of a web application, such as data storage and management, security, and performance. A back-end developer creates and maintains the server-side components of web applications, ensuring that they are fast, secure, and scalable.</p>
-                        <div class="course-rating">
-                            <div class="rating-txt">Master's Program</div>
-                            <div class="rating-icon">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <div class="rating-number">83 Ratings</div>
-                        </div>
-                        <div class="sect-btn-group">
-                            <a href="javascript:void(0)" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#requestSyllabus" >Apply Now</a>
-                        </div>
-
-                        <!-- <div class="course-package pd-tp-40">
-                            <div class="packages">
-                                <h4>EMI Starting at</h4>
-                                <span>₹ 3,519/month</span>
-                            </div>
-                            <div class="packages">
-                                <h4>Total Program Fee</h4>
-                                <span>₹ 1,05,999</span>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="col-sm-12 col-lg-5 pd-tp-40">
-                    <div class="banner-img course-bn-img">
-                        <!-- <img src="assets/images/img7.png" class="img-fluid"> -->
-                        <div class="enquire-free-consulation">
-                            <h5 class="mr-btm-40">Enquire to Get FREE Guidance</h5>
-                             <form id="enquire-consulation-form" class="request-form ">
-                                 <div class="form-groups mr-btm-20">
-                                    <label class="form-label">Name</label>
-                                     <input type="text" name="enquire-consulation-name" class="form-control enquire-consulation-inpt" />
-                                     <p class="error-inpt">Enter your first name..!</p>
-                                 </div>
-                                 
-                                 <div class="form-groups mr-btm-20">
-                                    <label class="form-label">Email</label>
-                                     <input type="email" name="enquire-consulation-email"  class="form-control enquire-consulation-inpt" />
-                                     <p class="error-inpt">Enter your email..!</p>
-                                 </div>
-                                 <div class="form-groups mr-btm-20">
-                                    <label class="form-label">City</label>
-                                     <input type="text" name="enquire-consulation-city" class="form-control enquire-consulation-inpt" />
-                                     <p class="error-inpt">Enter your City..!</p>
-                                 </div>
-                                 <div class="form-groups mr-btm-20">
-                                    <label class="form-label">Phone</label>
-                                    <div class="phone-inpt-flag">
-                                        <span class="cntry-flag cntry-flag-in"></span> +91
-                                    </div>
-                                     <input type="number" name="enquire-consulation-phone" class="form-control enquire-consulation-inpt" id="enquire-consulation-mobileNo" />
-                                     <p class="error-inpt">Enter your Number..!</p>
-                                     <p class="error-no enquire-consulation-no-err">Phone number should be 10 digits..!</p>
-                                 </div>
-                                 <input type="hidden" name="enquire-consulation-course" value="Back-End Developer" />
-                                
-                                 <div class="form-groups text-center">
-                                    <input type="hidden" name="enquire-consulation-page" value="bed">
-                                    <button type="button" class="btn btn-secondary bnr-enry-btn enquire-consulation-btn" onclick="validateForm('enquire-consulation')">Submit</button>
-                                 </div>
-                                 
-                             </form>
-                         </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Course short details -->
-            <div class="course-short-details d-none d-md-block">
-                <div class="row">
-                    <div class="col-md-4 course-short-box">
-                        <div class="course-short-txt text-center">
-                            <h4>Next Batch Starts: 11 May, 2023 </h4>
-                            <span>Limited no. of seats available</span>
-                        </div>
-                    </div>
-                    <div class="col-md-4 course-short-box">
-                        <div class="course-short-txt text-center">
-                            <h4>Program Duration: 3 Months</h4>
-                            <span>At 15-20 hours/week</span>
-                        </div>
-                    </div>
-                    <div class="col-md-4 course-short-box">
-                        <div class="course-short-txt text-center">
-                            <h4>Offline/Online</h4>
-                            <span>Learning Format</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Top Header Banner Ends-->
-
-    <!-- Join Our program -->
-    <section class="join-our-program bg-light pd-tp-80 pd-btm-60">
-        <div class="container">
-            <!-- Course short details -->
-            <div class="course-short-details d-md-none position-static mb-5">
-                <div class="row">
-                    <div class="col-md-4 course-short-box mb-3">
-                        <div class="course-short-txt text-center">
-                            <h4>Next Batch Starts: 11 May, 2023 </h4>
-                            <span>Limited no. of seats available</span>
-                        </div>
-                    </div>
-                    <div class="col-md-4 course-short-box mb-3">
-                        <div class="course-short-txt text-center">
-                            <h4>Program Duration: 3 Months</h4>
-                            <span>At 15-20 hours/week</span>
-                        </div>
-                    </div>
-                    <div class="col-md-4 course-short-box mb-3">
-                        <div class="course-short-txt text-center">
-                            <h4>Offline/Online</h4>
-                            <span>Learning Format</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section-title-4 ">
-                <h2>Why Join The Back-End Developer Program</h2>
-            </div>
-            <div class="row pd-tp-40">
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="card3">
-                        <div class="card3-img">
-                            <i class="fas fa-medal"></i>
-                        </div>
-                        <div class="card3-content">
-                            <h4>Decade’s Hottest Career</h4>
-                            <p>2021 witnessed a 21% jump in professionals.Industry Average Salary of an experienced developer is around INR 6.8 LPA.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="card3">
-                        <div class="card3-img">
-                            <i class="fas fa-briefcase"></i>
-                        </div>
-                        <div class="card3-content">
-                            <h4>100% Guaranteed Job</h4>
-                            <p>Our Programs are 100% Placement assured if you committed & complete your projects on fixed time duration.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="card3">
-                        <div class="card3-img">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <div class="card3-content">
-                            <h4>Gets You Interview Ready</h4>
-                            <p>Customised career mentoring session. Profile enhancement, mock interviews and regular feedback.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-     <!-- Join Our program ends-->
-
-     <!-- Our Placement Stats section -->
-     <section class="get-dream-job pd-tp-80 pd-btm-80">
-         <div class="container">
-            <div class="section-title-4">
-                <h2>Our Placement Stats</h2>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card4">
-                        <h5>Our Trained Students Count</h5>
-                        <h4>430+</h4>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card4">
-                        <h5>Average Take home Salary</h5>
-                        <h4>3.2 LPA</h4>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card4">
-                        <h5>Placement success rate</h5>
-                        <h4>92%</h4>
-                    </div>
-                </div>
-            </div>
-         </div>
-     </section>
-     <!--End Our Placement Stats section -->
-
-     <!-- Syllabus section -->
-    <section class="page-sec bg-prime pd-tp-80 pd-btm-80">
-        <div class="container">
-            <div class="section-title-4 pd-btm-20 ">
-                <h2 style="color:#fff;">Back-End Developer Training Syllabus</h2>
-                <p style="color:#fff;margin-bottom: 20px;" >Well trained domain experts deliver the premium content through case studies, real-time projects, assignments and live sessions.</p>
-               
-            </div>
-            <div class="sec-accord ">
-                <div class="accordion syllabus-accord row" id="accordionExample">
-                    <div class="col-12 col-lg-6">
-                        <div class="accordion-item ">
-                            <h2 class="accordion-header" id="heading-1">
-                                <button class="accordion-button collapsed" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapse-1"
-                                    aria-expanded="false" aria-controls="collapseThree">
-                                    PYTHON
-                                </button>
-                            </h2>
-                            <div id="collapse-1" class="accordion-collapse collapse show"
-                                aria-labelledby="heading-1" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <ul class="accord-list">
-                                        <li>Installation & Setup, Python Virtual Env</li>
-                                        <li>Numbers, Strings, Lists, Dictionaries, Tuples Sets & Boolean</li>
-                                        <li>Control Flow</li>
-                                        <li>Functions</li>
-                                        <li>Lambda Functions</li>
-                                        <li>Object Oriented Programming</li>
-                                        <li>Classes & objects</li>
-                                        <li>Class Inheritance</li>
-                                        <li>Decorators with parameters </li>
-                                        <li>Mutability</li>
-                                        <li>URL mappings</li>
-                                        <li>Template engines introduction [Jinja 2]</li>
-                                        <li>Loading templates</li>
-                                        <li>Template variables</li>
-                                        <li>Template control structures</li>
-                                        <li>Template inheritance</li>
-                                        <li>Static files</li>
-                                        <li>Creating modules</li>
-                                        <li>Population scripts</li>
-                                        <li>Views paradigm</li>
-                                        <li>Forms</li>
-                                        <li>Form Validation</li>
-                                        <li>URL template inheritance</li>
-                                        <li>Template filters & custom filters</li>
-                                        <li>Template Inheritance</li>
-                                        <li>Passwords, User models</li>
-                                        <li>pyunit</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item ">
-                            <h2 class="accordion-header" id="heading-2">
-                                <button class="accordion-button collapsed" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapse-2"
-                                    aria-expanded="false" aria-controls="collapseThree">
-                                    MongoDB
-                                </button>
-                            </h2>
-                            <div id="collapse-2" class="accordion-collapse collapse"
-                                aria-labelledby="heading-2" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <ul class="accord-list">
-                                        <li>Understanding Databases, Collections & Documents, Schemas & Relations: How to Structure Documents</li>
-                                        <li>Exploring The Shell & The Server, Using the MongoDB Compass to Explore Data Visually</li>
-                                        <li>Diving Into Create Operations, Read Operations - A Closer Look, Update</li>
-                                        <li>Operations, Understanding Delete Operations, Working with Indexes, Working with Geospatial Data</li>
-                                        <li>Understanding the Aggregation Framework, Working with Numeric Data</li>
-                                        <li>MongoDB & Security</li>
-                                       
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                        <div class="accordion-item ">
-                            <h2 class="accordion-header" id="heading-3">
-                                <button class="accordion-button collapsed" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapse-3"
-                                    aria-expanded="false" aria-controls="collapseThree">
-                                    Flask (Blue Print) based API
-                                </button>
-                            </h2>
-                            <div id="collapse-3" class="accordion-collapse collapse"
-                                aria-labelledby="heading-3" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <ul class="accord-list">
-                                      <li>What is an API?</li>
-                                      <li>Installing Flask</li>
-                                      <li>HTTP Verbs</li>
-                                      <li>REST Principles</li>
-                                      <li>Creating our application endpoints</li>
-                                      <li>Returning a list of stores</li>
-                                      <li>Implementing other endpoints</li>
-                                      <li>Using Postman for API testing</li>
-                                      <li>Setting up Flask-RESTful</li>
-                                      <li>Creating Item Resource</li>
-                                      <li>The ItemList and creating Items</li>
-                                      <li>Authentication and logging</li>
-                                      <li>DELETE to delete Items</li>
-                                      <li>PUT to create or update Items</li>
-                                      <li>Advanced request parsing with Flask-RESTful</li>
-                                      <li>Optimising our final code and request parsing</li>
-                                      <li>Connect MongoDB database from Python</li>
-                                      <li>Logging in and retrieving Users from a database</li>
-                                      <li>Signing up and writing Users to a database</li>
-                                      <li>Preventing duplicate usernames when signing users up</li>
-                                      <li>Retrieving our Item resources from a database</li>
-                                      <li>Writing our Item resources to a database</li>
-                                      <li>Deleting our Item resources from the database</li>
-                                      <li>Refactoring insertion of items</li>
-                                      <li>The PUT method with database interaction</li>
-                                      <li>Retrieving many items from the database</li>
-                                      <li>Connection a MongoDB with python and build an end to end 8 application from UI, Business layer to DB</li>
-                                      <li>CI/CD sample building the application using Jenkins</li>
-                                       
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- <a href="javascript:void(0)" onclick="showMoreLesson(event)" class="more-lesson">more lesson <i class="fa fa-angle-down" aria-hidden="true"></i></a>  -->
-                </div>
-            </div>    
-            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#requestSyllabus" class="btn btn-secondary btn-syllabus me-0 " ><i class="fa fa-download" aria-hidden="true"></i> DOWNLOAD SYLLABUS</a>
-         </div>
-     </section>
-
-     <!-- Course overview -->
-     <section class="course-overview bg-light pd-tp-80 pd-btm-80">
-         <div class="container">
-            <div class="section-title-4 pd-btm-20">
-                <h2>Back-end Developer Course Overview</h2>
-                <p>A back-end developer creates and maintains the server-side components of web applications, ensuring that they are fast, secure, and scalable. <br/>You will learn to build an end-to-end application, test and deploy code, store data using MongoDB and much more.</p>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <h4 class="pd-btm-20">Key Features</h4>
-                </div>
-                <div class="col-md-4 list-box1">
-                    <span class="list-bx1-icon"><i class="fas fa-check"></i></span>
-                    <p>8X higher engagement in live online classes by industry experts.</p>       
-                </div>
-                <div class="col-md-4 list-box1">
-                    <span class="list-bx1-icon"><i class="fas fa-check"></i></span>
-                    <p>Proficiency in server-side programming languages, such as Python.</p>       
-                </div>
-                <div class="col-md-4 list-box1">
-                    <span class="list-bx1-icon"><i class="fas fa-check"></i></span>
-                    <p>Experience with databases, such as MySQL, MongoDB.</p>       
-                </div>
-
-                <div class="col-md-4 list-box1">
-                    <span class="list-bx1-icon"><i class="fas fa-check"></i></span>
-                    <p>Knowledge of server-side frameworks.</p>       
-                </div>
-                <div class="col-md-4 list-box1">
-                    <span class="list-bx1-icon"><i class="fas fa-check"></i></span>
-                    <p>Start building your product from Day 1 with 100% hands-on training.</p>       
-                </div>
-                <div class="col-md-4 list-box1">
-                    <span class="list-bx1-icon"><i class="fas fa-check"></i></span>
-                    <p>Career mentoring through live sessions with industry experts.</p>       
-                </div>
-                
-                <div class="col-md-4 list-box1">
-                    <span class="list-bx1-icon"><i class="fas fa-check"></i></span>
-                    <p>Land a job within 3 months of Course completion.</p>       
-                </div>
-                <div class="col-md-4 list-box1">
-                    <span class="list-bx1-icon"><i class="fas fa-check"></i></span>
-                    <p>Premium Job placements from top Tech companies.</p>       
-                </div>
-                <div class="col-md-4 list-box1">
-                    <span class="list-bx1-icon"><i class="fas fa-check"></i></span>
-                    <p>Industry recognized certification.</p>       
-                </div>
-            </div>
-            <div class="section-title-4 pd-tp-20 pd-btm-20">
-                <h2>Fabevy Job Guarantee Program</h2>
-                <p>Boost your career as a Back-End Developer with Fabevy’s comprehensive job guarantee program that assures you a job within 3 months of course completion.</p>
-                <!-- <a href="#" class="btn btn-primary btn-brochure"><i class="fas fa-download"></i> FED Syllabus</a> -->
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card card5">
-                      <div class="card-body">
-                        <h4 class="card-title">Placement Assured <br class="d-lg-none">Programs <i class="fas fa-award"></i></h4>
-                        <p class="card-text"><i class="fas fa-diamond"></i> We assure 100% Job Guarantee for committed students who completes their tasks periodically.</p>
-                        <p class="card-text"><i class="fas fa-diamond"></i> Secure top Software Development jobs.</p>
-                      </div>
-                    </div>
-                </div>
-                 <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card card5">
-                      <div class="card-body">
-                        <h4 class="card-title">Career Mentoring <i class="fas fa-id-card"></i></h4>
-                        <p class="card-text"><i class="fas fa-diamond"></i> Tailor-made career guidance from industry experts.</p>
-                        <p class="card-text"><i class="fas fa-diamond"></i> Profile building and resume enhancement assistance.</p>
-                      </div>
-                    </div>
-                </div>
-                 <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card card5">
-                      <div class="card-body">
-                        <h4 class="card-title">Interview Preparation <i class="fas fa-user-tie"></i></h4>
-                        <p class="card-text"><i class="fas fa-diamond"></i> Mock interview sessions to help you crack that technical round</p>
-                        <p class="card-text"><i class="fas fa-diamond"></i> Soft-skill training so that you leave an indelible impression at the interview</p>
-                      </div>
-                    </div>
-                </div>
-            </div>
-
-         </div>
-     </section>
-     <!-- End Course overviews -->
-
-     <!-- Course detials -->
-     <section class="courses-details pd-tp-80 pd-btm-60">
-         <div class="container">
-             <div class="section-title-4 pd-btm-20">
-                 <h2>Back-End Developer Course Details</h2>
-                 <p>Become a certified Back-End Developer, perfect your coding skills and accelerate your career with Fabevy.</p>
-             </div>
-             <div class="row">
-                <div class="col-md-12">
-                    <h3 style="margin-bottom: 20px;font-weight: 500;">LEARNING PATH</h3>
-                </div>
-                 <div class="col-md-12 col-lg-8">
-                     <div class="courses-details-list bg-light">
-                         <div class="courses-details-content">
-                             <h5>Welcome Class For Back-End Developer</h5>
-                             <p>Get started with the Back-End Developer Program and explore everything about the program.</p>
-                         </div>
-                         <div class="courses-details-content">
-                             <h5>Bascis of Programming</h5>
-                             <p>Start with the basics of programming: Learn a programming language such as Python and get familiar with its syntax, data structures, and control structures.</p>
-                         </div>
-                         <div class="courses-details-content">
-                             <h5>Phase-2: Learn about Databases</h5>
-                             <p>Understanding how to design, query and manage databases is a fundamental skill for a back-end developer. You can start with SQL databases like MySQL.</p>
-                         </div>
-                         <div class="courses-details-content">
-                             <h5>Phase-3: Get familiar with web servers</h5>
-                             <p>Learn how to install, configure, and manage a web server like Apache or NGINX.</p>
-                         </div>
-                         <div class="courses-details-content">
-                             <h5>Phase-4: Learn about APIs</h5>
-                             <p>APIs are used to allow different applications to communicate with each other. Learn how to design, build and consume RESTful APIs.</p>
-                         </div>
-                         <div class="courses-details-content">
-                             <h5>Keep learning through Projects</h5>
-                             <p>Learn a back-end web framework,Practice version control,Learn about cloud infrastructure,Stay up-to-date with the latest developments in back-end technologies and frameworks, and continue to improve your skills through projects and continued learning.</p>
-                         </div>
-                     </div>
-                     <!-- <a href="#" class="btn btn-primary btn-syllabus"><i class="fas fa-download"></i> Program Syllabus</a> -->
-                 </div>
-
-                 <div class="col-md-12 col-lg-4">
-                     <div class="course-contact">
-
-                         <div class="course-contact-no">
-                             <div class="crs-contact-info">
-                                 <span>Contact Us</span>
-                                 <p>91503 72407</p>
-                                 <!-- <span>( Toll Free )</span> -->
-                             </div>
-                             <div class="crs-icon">
-                                 <i class="fas fa-phone"></i>
-                             </div>
-                         </div>
-
-                         <div class="request-more-info">
-                            <h5 class="mr-btm-40">Enquiry Now</h5>
-                             <form id="enquiry" class="request-form">
-                                 <div class="form-groups mr-btm-30">
-                                     <input type="text" name="enquiry-name" placeholder="Your Name*" class="form-control enquiry-inpt" />
-                                     <p class="error-inpt">Enter your first name..!</p>
-                                 </div>
-                                 
-                                 <div class="form-groups mr-btm-30">
-                                     <input type="email" name="enquiry-email" placeholder="Your Email*" class="form-control enquiry-inpt" />
-                                     <p class="error-inpt">Enter your email..!</p>
-                                 </div>
-                                 <div class="form-groups mr-btm-30">
-                                     <input type="number" name="enquiry-phone" class="form-control enquiry-inpt" placeholder="Phone Number*" id="enquiry-mobileNo" />
-                                     <p class="error-inpt">Enter your Number..!</p>
-                                     <p class="error-no enquiry-no-err">Phone number should be 10 digits..!</p>
-                                 </div>
-                                
-                                 <div class="form-groups mr-btm-30">
-                                     <select class="form-control enquiry-inpt" name="enquiry-looking-for">
-                                         <option value="none">looking For?</option>
-                                         <option value="Front End Development" >Front End Developer</option>
-                                         <option value="Back End Developer">Back End Developer</option>
-                                         <option value="Full Stack Developer">Full Stack Developer</option>
-                                         <option value="UI/UX Designer">UI/UX Designer</option>
-                                         <option value="Manual Testing">Manual Testing</option>
-                                         <option value="Digital Marketing">Digital Marketing</option>
-                                         <option value="API Testing">API Testing</option>
-                                     </select>
-                                     <p class="error-inpt">Select the course you looking for..!</p>
-                                 </div>
-                                 <div class="form-groups mr-btm-30">
-                                     <textarea name="enquiry-message" placeholder="Write an business requirements..." class="form-control enquiry-inpt" rows="5"></textarea>
-                                     <p class="error-inpt">Enter your business requirements..!</p>
-                                 </div>
-                                 <div class="form-groups mr-btm-30 text-center">
-                                    <input type="hidden" name="enquiry-page" value="bed" />
-                                    <button type="button" class="btn send-request-btn enquiry-btn" onclick="validateForm('enquiry')">Submit</button>
-                                 </div>
-                                 
-                             </form>
-                         </div>
-
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </section>
-     <!--  End Course detials -->
-
-    <!-- Skills section -->
-    <section class="skills-covered pd-tp-20 pd-btm-20">
-        <div class="container">
-            <h3 style="margin-bottom: 20px;font-weight: 500;" class="mr-btm-30">SKILLS COVERED</h3> 
-            <div class="list-bx1-row">
-                <div class=" list-box1">
-                    <span class="list-bx1-icon"><i class="fas fa-check"></i></span>
-                    <p>Python</p>       
-                </div>
-                <div class="list-box1">
-                    <span class="list-bx1-icon"><i class="fas fa-check"></i></span>
-                    <p>Flask (Blue Print) based API</p>       
-                </div>
-                <div class="list-box1">
-                    <span class="list-bx1-icon"><i class="fas fa-check"></i></span>
-                    <p>MongoDB</p>       
-                </div>
-                <div class="list-box1">
-                    <span class="list-bx1-icon"><i class="fas fa-check"></i></span>
-                    <p>HTML5 and CSS3</p>       
-                </div>
-                
-            </div>
-
-        </div>
-    </section>
-     <!-- End Skills section -->
-
-     <!-- Skills section -->
-    <section class="tools-covered pd-btm-40">
-        <div class="container">
-            <h3 style="margin-bottom: 20px;font-weight: 500;" class="mr-btm-30">TOOLS COVERED</h3>
-            <div class="explore-sect mr-hrz-auto wtd-100">
-                <ul class="explr-box justify-content-start">
-                    
-                    <li class="explr-list">
-                        <div class="explr-icon">
-                            <img src="assets/images/icons/python.png" alt="">
-                        </div>
-                        <p>Python</p>
-                    </li>
-                    
-                    <li class="explr-list">
-                        <div class="explr-icon">
-                            <img src="assets/images/icons/HTML.png" alt="">
-                        </div>
-                        <p>HTML</p>
-                    </li>
-                    <li class="explr-list">
-                        <div class="explr-icon">
-                            <img src="assets/images/icons/CSS.png" alt="">
-                        </div>
-                        <p>CSS</p>
-                    </li>
-                    <li class="explr-list">
-                        <div class="explr-icon">
-                            <img src="assets/images/icons/mongodb.png" alt="">
-                        </div>
-                        <p>MongoDB</p>
-                    </li>
-                    <li class="explr-list">
-                        <div class="explr-icon">
-                            <img src="assets/images/icons/git.png" alt="">
-                        </div>
-                        <p>Git</p>
-                    </li>
-                
-                </ul>
-            </div>
-            
-        </div>
-    </section>
-     <!-- End Skills section -->
-
-     <!-- industry projects -->
-     <section class="industry-project pd-btm-80">
-         <div class="container">
-            <h4 class="mr-btm-30">Industry Project</h4>
-            <div class="owl-carousel owl-theme industry-slider" id="career-slider">
-                <div class="item">
-                    <div class="projects-box">
-                        <div class="proj-title">
-                            <h5>Projects 1</h5>
-                            <h4>A User Authentication System</h4>
-                        </div>
-                        <div class="proj-text">
-                            <p>In this project, you’ll create a signup or login system for users on a website. It is important because many organization's website have an authentication layer embedded in them.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="projects-box">
-                        <div class="proj-title">
-                            <h5>Projects 2</h5>
-                            <h4>Cloning a Web application</h4>
-                        </div>
-                        <div class="proj-text">
-                            <p>Cloning an existing Website like Youtube using Back-end Functions.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="projects-box">
-                        <div class="proj-title">
-                            <h5>Projects 3</h5>
-                            <h4>Build a Finance Application</h4>
-                        </div>
-                        <div class="proj-text">
-                            <p>This project helps you to sharpen your skills and, at the very least, make recruiters curious about what else you can do.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="projects-box">
-                        <div class="proj-title">
-                            <h5>Projects 4</h5>
-                            <h4>Build a Landing Page </h4>
-                        </div>
-                        <div class="proj-text">
-                            <p>As a backend developer, you need to know about web servers, HTTP, and how web pages communicate with the server.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="projects-box">
-                        <div class="proj-title">
-                            <h5>Projects 5</h5>
-                            <h4>Build a Weather app </h4>
-                        </div>
-                        <div class="proj-text">
-                            <p>We will need to set up a backend server that connects to a front end client. Can’t have a weather app with no weather data! So we will make use of a 3rd party weather API to provide data. We need to connect to that API and use the returned weather data.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="projects-box">
-                        <div class="proj-title">
-                            <h5>Projects 6</h5>
-                            <h4>Grocery Website</h4>
-                        </div>
-                        <div class="proj-text">
-                            <p>Create a dynamic and responsive grocery e-commerce web application using technologies such as React Js, Html5, Css3.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-         </div>
-     </section>
-     <!-- End industry projects -->
-
-
-     <!-- Certification -->
-     <section class="certification bg-light pd-btm-80 pd-tp-80">
-         <div class="container">
-            <div class="section-title-2 ">
-                <h2>Get Fabevy Certified</h2>
-            </div>
-            <div class="certification-img text-center">
-                <img src="assets/images/certificate/certificate-course-Back-End-Developer.jpg" alt="Certificate course Back End Developer">
-            </div>
-         </div>
-     </section>
-
-     <!-- Our Alumni work -->
-    <section class="page-sec clients pd-tp-80 pd-btm-80">
-        <div class="container " style="width: 80%;">
-            <div class="section-title-2 pd-tp-0">
-                <h2>Where do our Alumni work?</h2>
-
-            </div>
-
-            <div class="row justify-content-center pd-btm-0">
-                <div class="client col-6 col-md-4 col-lg-2">
-                    <img src="assets/images/client/technorucs.png" alt="" class="img-fluid">
-                </div>
-                <div class="client col-6 col-md-4 col-lg-2">
-                    <img src="assets/images/client/Accenture-logo.png" alt="" class="img-fluid">
-                </div>
-                <div class="client col-6 col-md-4 col-lg-2">
-                    <img src="assets/images/client/Agilisys-Logo-Black-RGB.png" alt="" class="img-fluid">
-                </div>
-                <div class="client col-6 col-md-4 col-lg-2">
-                    <img src="assets/images/client/AppViewX_Logo.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="client col-6 col-md-4 col-lg-2">
-                    <img src="assets/images/client/1640158850317.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="client col-6 col-md-4 col-lg-2">
-                    <img src="assets/images/client-boodskap.png" alt="" class="img-fluid">
-                </div>
-                <div class="client col-6 col-md-4 col-lg-2">
-                    <img src="assets/images/client-cognizant.png" alt="" class="img-fluid">
-                </div>
-                <div class="client col-6 col-md-4 col-lg-2 highlight-2">
-                    <img src="assets/images/client-contus.png" alt="" class="img-fluid">
-                </div>
-                <div class="client col-6 col-md-4 col-lg-2">
-                    <img src="assets/images/client-datayaan.png" alt="" class="img-fluid">
-                </div>
-                <div class="client col-6 col-md-4 col-lg-2">
-                    <img src="assets/images/client/i0SguqEj400x400-1595950266500.avif" alt="" class="img-fluid">
-                </div>
-                <div class="client col-6 col-md-4 col-lg-2">
-                    <img src="assets/images/client/doodleblue-footer-logo.png" alt="" class="img-fluid">
-                </div>
-                <div class="client col-6 col-md-4 col-lg-2 highlight-3">
-                    <img src="assets/images/client-fullpotentialsolutions.png" alt="" class="img-fluid">
-                </div>
-                <div class="client col-6 col-md-4 col-lg-2">
-                    <img src="assets/images/client-hexacorp.png" alt="" class="img-fluid">
-                </div>
-                <div class="client col-6 col-md-4 col-lg-2">
-                    <img src="assets/images/client-hogarth.png" alt="" class="img-fluid">
-                </div>
-                <div class="client col-6 col-md-4 col-lg-2">
-                    <img src="assets/images/client-infosys.png" alt="" class="img-fluid">
-                </div>
-                <div class="client col-6 col-md-4 col-lg-2">
-                    <img src="assets/images/client-mobo.png" alt="" class="img-fluid">
-                </div>
-                <div class="client col-6 col-md-4 col-lg-2">
-                    <img src="assets/images/client/rdoftbzurlp50yearkrj.avif" alt="" class="img-fluid">
-                </div>
-                <div class="client col-6 col-md-4 col-lg-2">
-                    <img src="assets/images/client-nttdata.png" alt="" class="img-fluid">
-                </div>
-                <div class="client col-6 col-md-4 col-lg-2">
-                    <img src="assets/images/client/logo_black.png" alt="" class="img-fluid">
-                </div>
-                <div class="client col-6 col-md-4 col-lg-2 highlight-4">
-                    <img src="assets/images/client-saint-gobain.png" alt="" class="img-fluid">
-                </div>
-                <div class="client col-6 col-md-4 col-lg-2">
-                    <img src="assets/images/client-tcs.png" alt="" class="img-fluid">
-                </div>
-                <div class="client col-6 col-md-4 col-lg-2">
-                    <img src="assets/images/client/download.png" alt="" class="img-fluid">
-                </div>
-                <div class="client col-6 col-md-4 col-lg-2">
-                    <img src="assets/images/client/download (1).png" alt="" class="img-fluid">
-                </div>
-                <div class="client col-6 col-md-4 col-lg-2">
-                    <img src="assets/images/client-wipro.png" alt="" class="img-fluid">
-                </div>
-                <div class="client col-6 col-md-4 col-lg-2 highlight-1">
-                    <img src="assets/images/client-wondersoft.png" alt="" class="img-fluid">
-                </div>
-                <div class="client col-6 col-md-4 col-lg-2">
-                    <img src="assets/images/client-zoho.png" alt="" class="img-fluid">
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-    <!-- Our Alumni work end-->
-
-     <!-- Reviews -->
-    <section class="review-section pd-tp-80 pd-btm-80 bg-light">
-         <div class="container">
-            <div class="section-title-2 ">
-                <h2>Our Training Learner Reviews</h2>
-            </div>
-            <div class="owl-carousel owl-theme" id="review-slider">
-                <div class="item">
-                    <div class="card card6">
-                        <div class="card-id-title">
-                            <img src="https://lh3.googleusercontent.com/a-/ACB-R5QlFvKH7pg2T6a5yOFSh2EtBt27ZgCXbvqxneg6=w60-h60-p-rp-mo-br100" alt="review">
-                            <h5>Uthra lakshmi</h5>
-                            <!-- <span>Front end Developer</span> -->
-                            <div class="review-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Fabevy is the right place where you can develop your skills. I have learned alot through this training.The trainer is very supportive and his way of teaching is awesome and very interesting. Fabevy trainees are really very lucky...Your skills will increase day by day....At the end of the training, you will have the confidence and satisfaction..I am very thankful to the great mentor of fabevy, Vel Murugan.</p>
-                        
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card card6">
-                        <div class="card-id-title">
-                            <img src="https://lh3.googleusercontent.com/a-/ACB-R5RFYKw21PGpXKO4iM_XHV3QR2IOnPESc3pQhSc-UDo=w60-h60-p-rp-mo-br100" alt="review">
-                            <h5>Mohamed Inamul Hasan</h5>
-                            <!-- <span>Front end Developer</span> -->
-                            <div class="review-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">A good place to educate yourself first and agitate that in the right place. only lucky ones will get a chance to meet the trainer Mr.vel. he is a good trainer both technically and mentally. If IT was your passion then come and join FABEVY. Tats enough.</p>
-                        
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card card6">
-                        <div class="card-id-title">
-                            <img src="https://lh3.googleusercontent.com/a-/ACB-R5T28yqbP4VvRqQLtC6aAVJMDaJsd2KMpyAiAwZAqh4=w60-h60-p-rp-mo-br100" alt="review">
-                            <h5>Abu Mj</h5>
-                            <!-- <span>Front end Developer</span> -->
-                            <div class="review-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Hi actually when i was went to fabevy at first time i had nothing skills in my knowledge trainer trained me basic thing to experience level they treat learners very well. They explain each issues,each tags and how to code in structure way, its a good place to get a job for freshers. I also got a job from this place.</p>
-                        
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card card6">
-                        <div class="card-id-title">
-                            <img src="https://lh3.googleusercontent.com/a-/ACB-R5RtevTMthYicjA3ra8GyjUG3gt88MiCf0KEJptXqg=w60-h60-p-rp-mo-br100" alt="review">
-                            <h5>Harish P S</h5>
-                            <!-- <span>Senior Software Engineer</span> -->
-                            <div class="review-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Good learning institute for fresher, where fresher can gain knowledge what industry needs.Before entering into the training program in fabevy, I was blank about front end development. But after completing the training I feel that I am having the skills equal to a person with industry experience.</p>
-                        
-                        </div>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="card card6">
-                        <div class="card-id-title">
-                            <img src="https://lh3.googleusercontent.com/a-/ACB-R5RvWeKJDzqD4ERFsRUGTG4J3dOPiUjC67BBBvFVEA=w60-h60-p-rp-mo-br100" alt="review">
-                            <h5>Firdous ahmed</h5>
-                            <!-- <span>Senior Software Engineer</span> -->
-                            <div class="review-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Excellent, good exercises, good speed, well communicated. The trainer made everyone feel very comfortable, able to contribute and take something away. The trainer supports even after the Training program. Excellent.</p>
-                        
-                        </div>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="card card6">
-                        <div class="card-id-title">
-                            <img src="https://lh3.googleusercontent.com/a-/ACB-R5QEcIeSTzMAqKisOaK_Y947rRzqx1eT9zdxqsg2QA=w60-h60-p-rp-mo-br100" alt="review">
-                            <h5>Anandhv raj</h5>
-                            <!-- <span>Senior Software Engineer</span> -->
-                            <div class="review-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Great learning centre for the fresher who start carrier in a right way from the beginning. Not only for the freshers even for experienced persons who need to upgrade in new technology. The person who come out after the training from Fabevey he must be industry and work ready. I congrats the team and my best wishes to the phenomenal improvement.</p>
-                        
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            
-         </div>
-    </section>
-     
-
-    
-
-    <!-- Coach for Advice -->
-    <section class="page-sec pd-tp-80 pd-btm-100">
-        <div class="sect-bg" style="background-image: url(assets/images/bg1.png);"></div>
-        <div class="container">
-            <div class="section-title-3 text-center pd-btm-60 pd-tp-60">
-                <h2>Ask your coach for advice!</h2>
-                <p class="text-center mr-btm-40">Book your first coaching session and get started today on your
-                    <br />journey to a fulfilling career in tech
-                </p>
-                <a href="walink.html?fabWeb01" class="btn btn-primary mr-hrz-auto " target="_blank">Chat with us NOW</a>
-            </div>
-        </div>
-    </section>
-    <!-- Coach for Advice end-->
-
-    <!-- Footer section -->
-    <footer class="footer bg-light">
-
-        <div class="container pd-tp-80 pd-btm-40">
-            <div class="row ft-info">
-                <div class="col-12">
-                    <h5 class="text-pink font-fam-bold">Know about Fabevy</h5>
-                    <p class="py-1">Fabevy provides affordable and efficient training to active jobseekers &amp; graduates who are passionate about starting their IT career. We transform jobseekers into professionals by upskilling them.</p>
-
-                    <h5 class="text-pink font-fam-bold">We Stand Out because</h5>
-                    <p class="py-1">We successfully provide trainees with intensive courses from industry's top mentors. Fabevy strives to make the learning experience comprehensive and accessible for job-seekers. We believe in empowering every graduate who struggle to kick-start his/her career.</p>
-
-                    <h5 class="text-pink font-fam-bold">Our Key Focus Areas</h5>
-                    <p class="py-1">Fabevy's main focus is to make skill-development program as economical as possible for all first-gen graduates. With our affordable &amp; placement guranteed courses we have been able to provide a platform for 100s of IT career aspirants.</p>
-
-                    <h5 class="text-pink font-fam-bold">What Makes Us Different</h5>
-                    <p class="py-1">Fabevy strives to focus on Placement-First programs which would ensure every trainee to land in a job after the successful completion of our progam. Industry relevant curriculum and portfolio building based learning experience differentiate Fabevy from tradition training academies.</p>
-                </div>
-                
-                
-            </div>
-        </div>
-        <div class="ft-nav-section pd-tp-60 pd-btm-20">
-            <div class="container">
-                <div class="row">
-                <div class="col-lg-3 col-md-6 ft-links">
-                    <h4>Quick Links</h4>
-                    <ul class="ft-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="job-guarantee-programs.html">Job Guarantee Programs</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                    
-                </div>
-
-                <div class="col-lg-3 col-md-6 ft-links">
-                    <h4>Our Programs</h4>
-                    <ul class="ft-nav">
-                        <li><a href="front-end-developer-courses.html" target="_blank">Front End Developer</a></li>
-                        <li><a href="backend-developer-courses.html" target="_blank">Back End Developer</a></li>
-                        <li><a href="full-stack-developer-course.html" target="_blank">Full Stack Developer </a></li>
-                        <li><a href="ui-ux-designer-course.html" target="_blank">UI/UX Designer </a></li>
-                        <li><a href="digital-marketing.html" target="_blank">Digital Marketing</a></li>
-                        <li><a href="manual-testing-course.html" target="_blank">Manual Testing</a></li>
-                        <li><a href="api-testing-using-python.html" target="_blank">API Testing</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-6 ft-links">
-                    <h4>Chennai</h4>
-                    <p>
-                        Navitha Apartments,<br>
-                        #44, 2nd St, MCN Nagar,<br>
-                        Thoraipakkam, OMR, Chennai,<br>
-                        Tamil Nadu - 600097
-                    </p>
-                    <p>
-                        <a href="tel:+91-8754011175" target="_blank">+91 - 63812 44191</a>
-                   </p>
-                </div>
-                <div class="col-lg-3 col-md-6 ft-links">
-                    <h4>Tenkasi</h4>
-                    <p>
-                        AV Complex, 10/210A, First Floor,<br>
-                        Surandai Main Road,<br>
-                        Pavoorchatram, Tenkasi,<br>
-                        Tamil Nadu - 627808
-                    </p>
-                    <p>
-                        <a href="tel:+91-9150372409" target="_blank">+91 - 91503 72409</a>
-                   </p>
-                </div>
-                <div class="col-lg-3 col-md-6 ft-links">
-                    
-
-                </div>
-            </div>
-            </div>
-            
-        </div>
-        <div class="ft-copyright" style="background-color: var(--fb-color-prim); color:var(--white);border-top: solid 1px var(--white);">
-            <div class="container">
-                <p class="copyright pd-tp-20 pd-btm-20">
-                    &copy; Copyright 2022 Fabevy Technologies. All Rights Reserved.
-                </p>
-            </div>
-        </div>
-    </footer>
-
-<!-- Request to Syllabus / Call Back! --->
-<div class="modal fade request-syllabus" id="requestSyllabus" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header justify-content-center">
-                <h5 class="modal-title text-center">Request to Syllabus / Call Back!</h5>
-                <button type="button" class="btn-close form-close-btn" id="close-enroll" data-bs-dismiss="modal" aria-label="Close">x</button>
-            </div>
-            <div class="modal-body">
-                <form id="syllabus-form" class="row request-form">
-                    <div class="col-lg-6 form-groups mr-btm-30">
-                        <label>First Name<span>*</span></label>
-                        <input type="text" name="syllabus-fname" placeholder="Enter First Name" class="form-control syllabus-inpt"  />
-                        <p class="error-inpt">Enter your First Name..!</p>
-                    </div>
-                    <div class="col-lg-6 form-groups mr-btm-30">
-                        <label>Last Name<span>*</span></label>
-                        <input type="text" name="syllabus-lname" placeholder="Enter Last Name" class="form-control syllabus-inpt" />
-                        <p class="error-inpt">Enter your Last Name..!</p>
-                    </div>
-                    <div class="col-lg-6 form-groups mr-btm-30">
-                        <label>Email<span>*</span></label>
-                        <input type="email" name="syllabus-email" placeholder="Enter Your Email" class="form-control syllabus-inpt" />
-                        <p class="error-inpt">Enter your Email..!</p>
-                    </div>
-                    <div class="col-lg-6 form-groups mr-btm-30">
-                        <label>City<span>*</span></label>
-                        <input type="text" name="syllabus-city" placeholder="Enter Your City" class="form-control syllabus-inpt" />
-                        <p class="error-inpt">Enter your city..!</p>
-                    </div>
-                    <div class="col-lg-6 form-groups mr-btm-30">
-                        <label>Mobile Number<span>*</span></label>
-                        <input type="number" name="syllabus-phone" class="form-control syllabus-inpt" id="syllabus-mobileNo" placeholder="Enter Phone Number" />
-                        <p class="error-inpt">Enter your Phone Number..!</p>
-                        <p class="error-no syllabus-no-err">Phone Number should be 10 digits..!</p>
-                    </div>
-                     
-                    <div class="col-lg-6 form-groups mr-btm-30">
-                        <label>looking For?<span>*</span></label>
-                        <select class="form-control syllabus-inpt" name="syllabus-looking-for">
-                            <option value="none">Select the course</option>
-                            <option value="Front End Development">Front End Developer</option>
-                            <option value="Back End Developer">Back End Developer</option>
-                            <option value="Full Stack Developer">Full Stack Developer</option>
-                            <option value="UI/UX Designer">UI/UX Designer</option>
-                            <option value="Manual Testing">Manual Testing</option>
-                            <option value="Digital Marketing">Digital Marketing</option>
-                            <option value="API Testing">API Testing</option>
-                        </select>
-                        <p class="error-inpt">Select the course you looking for..!</p>
-                    </div>
-                    <div class="col-12 form-groups mr-btm-30">
-                        <label>Message<span>*</span></label>
-                        <textarea placeholder="Write an business requirements..." name="syllabus-message" class="form-control syllabus-inpt" rows="5"></textarea>
-                        <p class="error-inpt">Enter your business requirements..!</p>
-                    </div>
-                    <div class="form-groups mr-btm-10 text-center">
-                        <input type="hidden" name="syllabus-page" value="bed">
-                        <button type="button" class="btn send-request-btn syllabus-btn" onclick="validateForm('syllabus')">ENROLL NOW</button>
-                    </div>
-                     
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="popup-section">
-    <div class="show-response">
-        <!-- <a href="javascript:void(0)" class="close-btns" data-target="popup-section">x</a> -->
-        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-        <p>Thanks for your Register. We will get back to you soon.</p>
-        <div class="download-syllabus-enroll d-none">
-            <p><b>We will mail you the syllabus shortly.</b></p>
-            <!-- <a class="btn btn-secondary btn-syllabus" id="syllabus-link"><i class="fa fa-download" aria-hidden="true"></i> Download Syllabus Now</a> -->
-        </div>
-    </div>
-    
-</div>
-
-<!-- Call back and enroll -->
-<div class="callback-enroll">
-    <div class="enroll-action">
-        <a href="walink.html?fabbackend" target="_blank" class="call-back"><i class="fa fa-phone" aria-hidden="true"></i> Call Our Advisor</a>    
-    </div>
-    <div class="enroll-action">
-        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#requestSyllabus" class="call-back">Enroll Now</a>
-    </div>
-    
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-<script type="text/javascript" src="assets/js/owl.carousel.js"></script>
-<script type="text/javascript" src="assets/js/script.js"></script>
-<script type="text/javascript" src="assets/js/slider.js"></script>
-</body>
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+
+    <title>Back-end Developer Course | Fabevy</title>
+
+    <script src="https://kit.fontawesome.com/1019926d45.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Owl Stylesheets -->
+
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="assets/css/flags.css">
+
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Google Tag Manager -->
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+
+})(window,document,'script','dataLayer','GTM-MSTB654');</script>
+
+<!-- End Google Tag Manager -->
+
+    
+
+    <!-- Meta Pixel Code -->
+
+    <script>
+
+    !function(f,b,e,v,n,t,s)
+
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+
+    n.queue=[];t=b.createElement(e);t.async=!0;
+
+    t.src=v;s=b.getElementsByTagName(e)[0];
+
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '454835103199157');
+
+    fbq('track', 'PageView');
+
+    </script>
+
+    <noscript><img height="1" width="1" style="display:none"
+
+    src="https://www.facebook.com/tr?id=454835103199157&ev=PageView&noscript=1"
+
+    /></noscript>
+
+    <!-- End Meta Pixel Code -->
+
+</head>
+
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MSTB654"
+
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <!-- End Google Tag Manager (noscript) -->
+
+    
+
+    <header class="topheader">
+
+        <div class="container">
+
+            <div class="row">
+
+
+
+                <!-- Logo -->
+
+                <div class="col-6 col-sm-3 logo-sec">
+
+                    <a href="index.html" class="logo">
+
+                        <img src="assets/images/fabevy-logo-landscape.png" alt="">
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- Menu toggle btn -->
+
+                <div class="menu-btn d-lg-none" id="menu-toggle-btn">
+
+                    <div class="btn-line1"></div>
+
+                    <div class="btn-line2"></div>
+
+                    <div class="btn-line3"></div>
+
+                </div>
+
+                <!-- Menu toggle btn ends -->
+
+
+
+                <!-- Header menu section -->
+
+                <div class="col-sm-9 d-none d-lg-block">
+
+                    <nav class="navbar navbar-expand-lg justify-content-end">
+
+                        <ul class="navbar-nav ">
+
+                            <li class="nav-item">
+
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+
+                            </li>
+
+                            <li class="nav-item">
+
+                                <a class="nav-link" aria-current="page" href="about.html">About</a>
+
+                            </li>
+
+                            <!-- <li class="nav-item">
+
+                                <a class="nav-link" aria-current="page" href="values.html">Values</a>
+
+                            </li> -->
+
+                            <li class="nav-item">
+
+                                <a class="nav-link active" aria-current="page" href="job-guarantee-programs.html">Job
+
+                                    Guarantee Programs</a>
+
+                            </li>
+
+                            <li class="nav-item">
+
+                                <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+
+                            </li>
+
+                        </ul>
+
+                    </nav>
+
+                </div>
+
+                <!-- Header menu section ends -->
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Hader menu  mobile -->
+
+    <header class="header-menu-mb d-lg-none">
+
+        <div class="menu-bg"></div>
+
+        <nav class="navbar-mb">
+
+           
+
+            <ul class="navbar-nav-mb">
+
+                <li>
+
+                    <a class="nav-link active" aria-current="page" href="index.html">Home <i class="fas fa-angle-right"></i></a>
+
+                </li>
+
+                <!-- <li class="nav-item">
+
+                    <a class="nav-link" href="#">Link</a>
+
+                </li> -->
+
+                <li class="nav-drop-link">
+
+                    <a class="nav-link nav-link-mb" href="#" id="navbarDropdown-mb" >About </a>
+
+                </li>
+
+                <li class="nav-item">
+
+                    <a class="nav-link" aria-current="page" href="job-guarantee-programs.html">Job Guarantee Programs</a>
+
+                </li>
+
+                <li class="nav-item">
+
+                    <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+
+                </li>
+
+            </ul>
+
+           
+
+           
+
+        </nav>
+
+                
+
+    </header>
+
+    <!-- Hader menu mobile ends-->
+
+
+
+    <!-- Top Header Banner -->
+
+    <section class="banner-sec page-banner bg-prime " >
+
+        <div class="container pd-btm-80">
+
+            <div class="row align-items-start">
+
+                <div class="col-sm-12 col-lg-7 pd-tp-40 pd-btm-40">
+
+                    <div class="page-banner-content">
+
+                        <h2 class="white">Back-End Developer</h2>
+
+                        <div class="txt-high-line">
+
+                            With a 100% Job Guarantee
+
+                        </div>
+
+                        
+
+                        <p class="mr-btm-40">Back-end development refers to the server-side development of web applications. The back end is responsible for the behind-the-scenes functionality of a web application, such as data storage and management, security, and performance. A back-end developer creates and maintains the server-side components of web applications, ensuring that they are fast, secure, and scalable.</p>
+
+                        <div class="course-rating">
+
+                            <div class="rating-txt">Master's Program</div>
+
+                            <div class="rating-icon">
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star-half-alt"></i>
+
+                            </div>
+
+                            <div class="rating-number">83 Ratings</div>
+
+                        </div>
+
+                        <div class="sect-btn-group">
+
+                            <a href="javascript:void(0)" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#requestSyllabus" >Apply Now</a>
+
+                        </div>
+
+
+
+                        <!-- <div class="course-package pd-tp-40">
+
+                            <div class="packages">
+
+                                <h4>EMI Starting at</h4>
+
+                                <span>₹ 3,519/month</span>
+
+                            </div>
+
+                            <div class="packages">
+
+                                <h4>Total Program Fee</h4>
+
+                                <span>₹ 1,05,999</span>
+
+                            </div>
+
+                        </div> -->
+
+                    </div>
+
+                </div>
+
+                <div class="col-sm-12 col-lg-5 pd-tp-40">
+
+                    <div class="banner-img course-bn-img">
+
+                        <!-- <img src="assets/images/img7.png" class="img-fluid"> -->
+
+                        <div class="enquire-free-consulation">
+
+                            <h5 class="mr-btm-40">Enquire to Get FREE Guidance</h5>
+
+                             <form id="enquire-consulation-form" class="request-form ">
+
+                                 <div class="form-groups mr-btm-20">
+
+                                    <label class="form-label">Name</label>
+
+                                     <input type="text" name="enquire-consulation-name" class="form-control enquire-consulation-inpt" />
+
+                                     <p class="error-inpt">Enter your first name..!</p>
+
+                                 </div>
+
+                                 
+
+                                 <div class="form-groups mr-btm-20">
+
+                                    <label class="form-label">Email</label>
+
+                                     <input type="email" name="enquire-consulation-email"  class="form-control enquire-consulation-inpt" />
+
+                                     <p class="error-inpt">Enter your email..!</p>
+
+                                     <p class="error-email enquire-consulation-email-err">Enter your vaild email...! </p>
+
+
+                                 </div>
+
+                                 <div class="form-groups mr-btm-20">
+
+                                    <label class="form-label">City</label>
+
+                                     <input type="text" name="enquire-consulation-city" class="form-control enquire-consulation-inpt" />
+
+                                     <p class="error-inpt">Enter your City..!</p>
+
+                                 </div>
+
+                                 <div class="form-groups mr-btm-20">
+
+                                    <label class="form-label">Phone</label>
+
+                                    <div class="phone-inpt-flag">
+
+                                        <span class="cntry-flag cntry-flag-in"></span> +91
+
+                                    </div>
+
+                                     <input type="number" name="enquire-consulation-phone" class="form-control enquire-consulation-inpt" id="enquire-consulation-mobileNo" />
+
+                                     <p class="error-inpt">Enter your Number..!</p>
+
+                                     <p class="error-no enquire-consulation-no-err">Phone number should be 10 digits..!</p>
+
+                                 </div>
+
+                                 <input type="hidden" name="enquire-consulation-course" value="Back-End Developer" />
+
+                                
+
+                                 <div class="form-groups text-center">
+
+                                    <input type="hidden" name="enquire-consulation-page" value="bed">
+
+                                    <button type="button" class="btn btn-secondary bnr-enry-btn enquire-consulation-btn" onclick="validateForm('enquire-consulation')">Submit</button>
+
+                                 </div>
+
+                                 
+
+                             </form>
+
+                         </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Course short details -->
+
+            <div class="course-short-details d-none d-md-block">
+
+                <div class="row">
+
+                    <div class="col-md-4 course-short-box">
+
+                        <div class="course-short-txt text-center">
+
+                            <h4>Next Batch Starts soon </h4>
+
+                            <span>Limited no. of seats available</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4 course-short-box">
+
+                        <div class="course-short-txt text-center">
+
+                            <h4>Program Duration: 3 Months</h4>
+
+                            <span>At 15-20 hours/week</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4 course-short-box">
+
+                        <div class="course-short-txt text-center">
+
+                            <h4>Offline/Online</h4>
+
+                            <span>Learning Format</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Top Header Banner Ends-->
+
+
+
+    <!-- Join Our program -->
+
+    <section class="join-our-program bg-light pd-tp-80 pd-btm-60">
+
+        <div class="container">
+
+            <!-- Course short details -->
+
+            <div class="course-short-details d-md-none position-static mb-5">
+
+                <div class="row">
+
+                    <div class="col-md-4 course-short-box mb-3">
+
+                        <div class="course-short-txt text-center">
+
+                            <h4>Next Batch Starts: 11 May, 2023 </h4>
+
+                            <span>Limited no. of seats available</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4 course-short-box mb-3">
+
+                        <div class="course-short-txt text-center">
+
+                            <h4>Program Duration: 3 Months</h4>
+
+                            <span>At 15-20 hours/week</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4 course-short-box mb-3">
+
+                        <div class="course-short-txt text-center">
+
+                            <h4>Offline/Online</h4>
+
+                            <span>Learning Format</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="section-title-4 ">
+
+                <h2>Why Join The Back-End Developer Program</h2>
+
+            </div>
+
+            <div class="row pd-tp-40">
+
+                <div class="col-md-6 col-lg-4 mb-5">
+
+                    <div class="card3">
+
+                        <div class="card3-img">
+
+                            <i class="fas fa-medal"></i>
+
+                        </div>
+
+                        <div class="card3-content">
+
+                            <h4>Decade’s Hottest Career</h4>
+
+                            <p>2021 witnessed a 21% jump in professionals.Industry Average Salary of an experienced developer is around INR 6.8 LPA.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-5">
+
+                    <div class="card3">
+
+                        <div class="card3-img">
+
+                            <i class="fas fa-briefcase"></i>
+
+                        </div>
+
+                        <div class="card3-content">
+
+                            <h4>100% Guaranteed Job</h4>
+
+                            <p>Our Programs are 100% Placement assured if you committed & complete your projects on fixed time duration.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-5">
+
+                    <div class="card3">
+
+                        <div class="card3-img">
+
+                            <i class="fas fa-chart-line"></i>
+
+                        </div>
+
+                        <div class="card3-content">
+
+                            <h4>Gets You Interview Ready</h4>
+
+                            <p>Customised career mentoring session. Profile enhancement, mock interviews and regular feedback.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+     <!-- Join Our program ends-->
+
+
+
+     <!-- Our Placement Stats section -->
+
+     <section class="get-dream-job pd-tp-80 pd-btm-80">
+
+         <div class="container">
+
+            <div class="section-title-4">
+
+                <h2>Our Placement Stats</h2>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-6 col-lg-4 mb-4">
+
+                    <div class="card4">
+
+                        <h5>Our Placed Students Count</h5>
+
+                        <h4>430+</h4>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+
+                    <div class="card4">
+
+                        <h5>Average Take home Salary</h5>
+
+                        <h4>3.2 LPA</h4>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+
+                    <div class="card4">
+
+                        <h5>Placement success rate</h5>
+
+                        <h4>92%</h4>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+         </div>
+
+     </section>
+
+     <!--End Our Placement Stats section -->
+
+
+
+     <!-- Syllabus section -->
+
+    <section class="page-sec bg-prime pd-tp-80 pd-btm-80">
+
+        <div class="container">
+
+            <div class="section-title-4 pd-btm-20 ">
+
+                <h2 style="color:#fff;">Back-End Developer Training Syllabus</h2>
+
+                <p style="color:#fff;margin-bottom: 20px;" >Well trained domain experts deliver the premium content through case studies, real-time projects, assignments and live sessions.</p>
+
+               
+
+            </div>
+
+            <div class="sec-accord ">
+
+                <div class="accordion syllabus-accord row" id="accordionExample">
+
+                    <div class="col-12 col-lg-6">
+
+                        <div class="accordion-item ">
+
+                            <h2 class="accordion-header" id="heading-1">
+
+                                <button class="accordion-button collapsed" type="button"
+
+                                    data-bs-toggle="collapse" data-bs-target="#collapse-1"
+
+                                    aria-expanded="false" aria-controls="collapseThree">
+
+                                    PYTHON
+
+                                </button>
+
+                            </h2>
+
+                            <div id="collapse-1" class="accordion-collapse collapse show"
+
+                                aria-labelledby="heading-1" data-bs-parent="#accordionExample">
+
+                                <div class="accordion-body">
+
+                                    <ul class="accord-list">
+
+                                        <li>Installation & Setup, Python Virtual Env</li>
+
+                                        <li>Numbers, Strings, Lists, Dictionaries, Tuples Sets & Boolean</li>
+
+                                        <li>Control Flow</li>
+
+                                        <li>Functions</li>
+
+                                        <li>Lambda Functions</li>
+
+                                        <li>Object Oriented Programming</li>
+
+                                        <li>Classes & objects</li>
+
+                                        <li>Class Inheritance</li>
+
+                                        <li>Decorators with parameters </li>
+
+                                        <li>Mutability</li>
+
+                                        <li>URL mappings</li>
+
+                                        <li>Template engines introduction [Jinja 2]</li>
+
+                                        <li>Loading templates</li>
+
+                                        <li>Template variables</li>
+
+                                        <li>Template control structures</li>
+
+                                        <li>Template inheritance</li>
+
+                                        <li>Static files</li>
+
+                                        <li>Creating modules</li>
+
+                                        <li>Population scripts</li>
+
+                                        <li>Views paradigm</li>
+
+                                        <li>Forms</li>
+
+                                        <li>Form Validation</li>
+
+                                        <li>URL template inheritance</li>
+
+                                        <li>Template filters & custom filters</li>
+
+                                        <li>Template Inheritance</li>
+
+                                        <li>Passwords, User models</li>
+
+                                        <li>pyunit</li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="accordion-item ">
+
+                            <h2 class="accordion-header" id="heading-2">
+
+                                <button class="accordion-button collapsed" type="button"
+
+                                    data-bs-toggle="collapse" data-bs-target="#collapse-2"
+
+                                    aria-expanded="false" aria-controls="collapseThree">
+
+                                    MongoDB
+
+                                </button>
+
+                            </h2>
+
+                            <div id="collapse-2" class="accordion-collapse collapse"
+
+                                aria-labelledby="heading-2" data-bs-parent="#accordionExample">
+
+                                <div class="accordion-body">
+
+                                    <ul class="accord-list">
+
+                                        <li>Understanding Databases, Collections & Documents, Schemas & Relations: How to Structure Documents</li>
+
+                                        <li>Exploring The Shell & The Server, Using the MongoDB Compass to Explore Data Visually</li>
+
+                                        <li>Diving Into Create Operations, Read Operations - A Closer Look, Update</li>
+
+                                        <li>Operations, Understanding Delete Operations, Working with Indexes, Working with Geospatial Data</li>
+
+                                        <li>Understanding the Aggregation Framework, Working with Numeric Data</li>
+
+                                        <li>MongoDB & Security</li>
+
+                                       
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+
+                        <div class="accordion-item ">
+
+                            <h2 class="accordion-header" id="heading-3">
+
+                                <button class="accordion-button collapsed" type="button"
+
+                                    data-bs-toggle="collapse" data-bs-target="#collapse-3"
+
+                                    aria-expanded="false" aria-controls="collapseThree">
+
+                                    Flask (Blue Print) based API
+
+                                </button>
+
+                            </h2>
+
+                            <div id="collapse-3" class="accordion-collapse collapse"
+
+                                aria-labelledby="heading-3" data-bs-parent="#accordionExample">
+
+                                <div class="accordion-body">
+
+                                    <ul class="accord-list">
+
+                                      <li>What is an API?</li>
+
+                                      <li>Installing Flask</li>
+
+                                      <li>HTTP Verbs</li>
+
+                                      <li>REST Principles</li>
+
+                                      <li>Creating our application endpoints</li>
+
+                                      <li>Returning a list of stores</li>
+
+                                      <li>Implementing other endpoints</li>
+
+                                      <li>Using Postman for API testing</li>
+
+                                      <li>Setting up Flask-RESTful</li>
+
+                                      <li>Creating Item Resource</li>
+
+                                      <li>The ItemList and creating Items</li>
+
+                                      <li>Authentication and logging</li>
+
+                                      <li>DELETE to delete Items</li>
+
+                                      <li>PUT to create or update Items</li>
+
+                                      <li>Advanced request parsing with Flask-RESTful</li>
+
+                                      <li>Optimising our final code and request parsing</li>
+
+                                      <li>Connect MongoDB database from Python</li>
+
+                                      <li>Logging in and retrieving Users from a database</li>
+
+                                      <li>Signing up and writing Users to a database</li>
+
+                                      <li>Preventing duplicate usernames when signing users up</li>
+
+                                      <li>Retrieving our Item resources from a database</li>
+
+                                      <li>Writing our Item resources to a database</li>
+
+                                      <li>Deleting our Item resources from the database</li>
+
+                                      <li>Refactoring insertion of items</li>
+
+                                      <li>The PUT method with database interaction</li>
+
+                                      <li>Retrieving many items from the database</li>
+
+                                      <li>Connection a MongoDB with python and build an end to end 8 application from UI, Business layer to DB</li>
+
+                                      <li>CI/CD sample building the application using Jenkins</li>
+
+                                       
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    
+
+                    <!-- <a href="javascript:void(0)" onclick="showMoreLesson(event)" class="more-lesson">more lesson <i class="fa fa-angle-down" aria-hidden="true"></i></a>  -->
+
+                </div>
+
+            </div>    
+
+            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#requestSyllabus" class="btn btn-secondary btn-syllabus me-0 " ><i class="fa fa-download" aria-hidden="true"></i> DOWNLOAD SYLLABUS</a>
+
+         </div>
+
+     </section>
+
+
+
+     <!-- Course overview -->
+
+     <section class="course-overview bg-light pd-tp-80 pd-btm-80">
+
+         <div class="container">
+
+            <div class="section-title-4 pd-btm-20">
+
+                <h2>Back-end Developer Course Overview</h2>
+
+                <p>A back-end developer creates and maintains the server-side components of web applications, ensuring that they are fast, secure, and scalable. <br/>You will learn to build an end-to-end application, test and deploy code, store data using MongoDB and much more.</p>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <h4 class="pd-btm-20">Key Features</h4>
+
+                </div>
+
+                <div class="col-md-4 list-box1">
+
+                    <span class="list-bx1-icon"><i class="fas fa-check"></i></span>
+
+                    <p>8X higher engagement in live online classes by industry experts.</p>       
+
+                </div>
+
+                <div class="col-md-4 list-box1">
+
+                    <span class="list-bx1-icon"><i class="fas fa-check"></i></span>
+
+                    <p>Proficiency in server-side programming languages, such as Python.</p>       
+
+                </div>
+
+                <div class="col-md-4 list-box1">
+
+                    <span class="list-bx1-icon"><i class="fas fa-check"></i></span>
+
+                    <p>Experience with databases, such as MySQL, MongoDB.</p>       
+
+                </div>
+
+
+
+                <div class="col-md-4 list-box1">
+
+                    <span class="list-bx1-icon"><i class="fas fa-check"></i></span>
+
+                    <p>Knowledge of server-side frameworks.</p>       
+
+                </div>
+
+                <div class="col-md-4 list-box1">
+
+                    <span class="list-bx1-icon"><i class="fas fa-check"></i></span>
+
+                    <p>Start building your product from Day 1 with 100% hands-on training.</p>       
+
+                </div>
+
+                <div class="col-md-4 list-box1">
+
+                    <span class="list-bx1-icon"><i class="fas fa-check"></i></span>
+
+                    <p>Career mentoring through live sessions with industry experts.</p>       
+
+                </div>
+
+                
+
+                <div class="col-md-4 list-box1">
+
+                    <span class="list-bx1-icon"><i class="fas fa-check"></i></span>
+
+                    <p>Land a job within 3 months of Course completion.</p>       
+
+                </div>
+
+                <div class="col-md-4 list-box1">
+
+                    <span class="list-bx1-icon"><i class="fas fa-check"></i></span>
+
+                    <p>Premium Job placements from top Tech companies.</p>       
+
+                </div>
+
+                <div class="col-md-4 list-box1">
+
+                    <span class="list-bx1-icon"><i class="fas fa-check"></i></span>
+
+                    <p>Industry recognized certification.</p>       
+
+                </div>
+
+            </div>
+
+            <div class="section-title-4 pd-tp-20 pd-btm-20">
+
+                <h2>Fabevy Job Guarantee Program</h2>
+
+                <p>Boost your career as a Back-End Developer with Fabevy’s comprehensive job guarantee program that assures you a job within 3 months of course completion.</p>
+
+                <!-- <a href="#" class="btn btn-primary btn-brochure"><i class="fas fa-download"></i> FED Syllabus</a> -->
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-6 col-lg-4 mb-4">
+
+                    <div class="card card5">
+
+                      <div class="card-body">
+
+                        <h4 class="card-title">Placement Assured <br class="d-lg-none">Programs <i class="fas fa-award"></i></h4>
+
+                        <p class="card-text"><i class="fas fa-diamond"></i> We assure 100% Job Guarantee for committed students who completes their tasks periodically.</p>
+
+                        <p class="card-text"><i class="fas fa-diamond"></i> Secure top Software Development jobs.</p>
+
+                      </div>
+
+                    </div>
+
+                </div>
+
+                 <div class="col-md-6 col-lg-4 mb-4">
+
+                    <div class="card card5">
+
+                      <div class="card-body">
+
+                        <h4 class="card-title">Career Mentoring <i class="fas fa-id-card"></i></h4>
+
+                        <p class="card-text"><i class="fas fa-diamond"></i> Tailor-made career guidance from industry experts.</p>
+
+                        <p class="card-text"><i class="fas fa-diamond"></i> Profile building and resume enhancement assistance.</p>
+
+                      </div>
+
+                    </div>
+
+                </div>
+
+                 <div class="col-md-6 col-lg-4 mb-4">
+
+                    <div class="card card5">
+
+                      <div class="card-body">
+
+                        <h4 class="card-title">Interview Preparation <i class="fas fa-user-tie"></i></h4>
+
+                        <p class="card-text"><i class="fas fa-diamond"></i> Mock interview sessions to help you crack that technical round</p>
+
+                        <p class="card-text"><i class="fas fa-diamond"></i> Soft-skill training so that you leave an indelible impression at the interview</p>
+
+                      </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+         </div>
+
+     </section>
+
+     <!-- End Course overviews -->
+
+
+
+     <!-- Course detials -->
+
+     <section class="courses-details pd-tp-80 pd-btm-60">
+
+         <div class="container">
+
+             <div class="section-title-4 pd-btm-20">
+
+                 <h2>Back-End Developer Course Details</h2>
+
+                 <p>Become a certified Back-End Developer, perfect your coding skills and accelerate your career with Fabevy.</p>
+
+             </div>
+
+             <div class="row">
+
+                <div class="col-md-12">
+
+                    <h3 style="margin-bottom: 20px;font-weight: 500;">LEARNING PATH</h3>
+
+                </div>
+
+                 <div class="col-md-12 col-lg-8">
+
+                     <div class="courses-details-list bg-light">
+
+                         <div class="courses-details-content">
+
+                             <h5>Welcome Class For Back-End Developer</h5>
+
+                             <p>Get started with the Back-End Developer Program and explore everything about the program.</p>
+
+                         </div>
+
+                         <div class="courses-details-content">
+
+                             <h5>Bascis of Programming</h5>
+
+                             <p>Start with the basics of programming: Learn a programming language such as Python and get familiar with its syntax, data structures, and control structures.</p>
+
+                         </div>
+
+                         <div class="courses-details-content">
+
+                             <h5>Phase-2: Learn about Databases</h5>
+
+                             <p>Understanding how to design, query and manage databases is a fundamental skill for a back-end developer. You can start with SQL databases like MySQL.</p>
+
+                         </div>
+
+                         <div class="courses-details-content">
+
+                             <h5>Phase-3: Get familiar with web servers</h5>
+
+                             <p>Learn how to install, configure, and manage a web server like Apache or NGINX.</p>
+
+                         </div>
+
+                         <div class="courses-details-content">
+
+                             <h5>Phase-4: Learn about APIs</h5>
+
+                             <p>APIs are used to allow different applications to communicate with each other. Learn how to design, build and consume RESTful APIs.</p>
+
+                         </div>
+
+                         <div class="courses-details-content">
+
+                             <h5>Keep learning through Projects</h5>
+
+                             <p>Learn a back-end web framework,Practice version control,Learn about cloud infrastructure,Stay up-to-date with the latest developments in back-end technologies and frameworks, and continue to improve your skills through projects and continued learning.</p>
+
+                         </div>
+
+                     </div>
+
+                     <!-- <a href="#" class="btn btn-primary btn-syllabus"><i class="fas fa-download"></i> Program Syllabus</a> -->
+
+                 </div>
+
+
+
+                 <div class="col-md-12 col-lg-4">
+
+                     <div class="course-contact">
+
+
+
+                         <div class="course-contact-no">
+
+                             <div class="crs-contact-info">
+
+                                 <span>Contact Us</span>
+
+                                 <p>91503 72407</p>
+
+                                 <!-- <span>( Toll Free )</span> -->
+
+                             </div>
+
+                             <div class="crs-icon">
+
+                                 <i class="fas fa-phone"></i>
+
+                             </div>
+
+                         </div>
+
+
+
+                         <div class="request-more-info">
+
+                            <h5 class="mr-btm-40">Enquiry Now</h5>
+
+                             <form id="enquiry" class="request-form">
+
+                                 <div class="form-groups mr-btm-30">
+
+                                     <input type="text" name="enquiry-name" placeholder="Your Name*" class="form-control enquiry-inpt" />
+
+                                     <p class="error-inpt">Enter your first name..!</p>
+
+                                 </div>
+
+                                 
+
+                                 <div class="form-groups mr-btm-30">
+
+                                     <input type="email" name="enquiry-email" placeholder="Your Email*" class="form-control enquiry-inpt" />
+
+                                     <p class="error-inpt">Enter your email..!</p>
+
+                                     <p class="error-email enquiry-email-err">Enter your vaild email...!</p>
+
+
+                                 </div>
+
+                                 <div class="form-groups mr-btm-30">
+
+                                     <input type="number" name="enquiry-phone" class="form-control enquiry-inpt" placeholder="Phone Number*" id="enquiry-mobileNo" />
+
+                                     <p class="error-inpt">Enter your Number..!</p>
+
+                                     <p class="error-no enquiry-no-err">Phone number should be 10 digits..!</p>
+
+                                 </div>
+
+                                
+
+                                 <div class="form-groups mr-btm-30">
+
+                                     <select class="form-control enquiry-inpt" name="enquiry-looking-for">
+
+                                         <option value="none">looking For?</option>
+
+                                         <option value="Front End Development" >Front End Developer</option>
+
+                                         <option value="Back End Developer">Back End Developer</option>
+
+                                         <option value="Full Stack Developer">Full Stack Developer</option>
+
+                                         <option value="UI/UX Designer">UI/UX Designer</option>
+
+                                         <option value="Manual Testing">Manual Testing</option>
+
+                                         <option value="Digital Marketing">Digital Marketing</option>
+
+                                         <option value="API Testing">API Testing</option>
+
+                                     </select>
+
+                                     <p class="error-inpt">Select the course you looking for..!</p>
+
+                                 </div>
+
+                                 <div class="form-groups mr-btm-30">
+
+                                     <textarea name="enquiry-message" placeholder="Write an business requirements..." class="form-control enquiry-inpt" rows="5"></textarea>
+
+                                     <p class="error-inpt">Enter your business requirements..!</p>
+
+                                 </div>
+
+                                 <div class="form-groups mr-btm-30 text-center">
+
+                                    <input type="hidden" name="enquiry-page" value="bed" />
+
+                                    <button type="button" class="btn send-request-btn enquiry-btn" onclick="validateForm('enquiry')">Submit</button>
+
+                                 </div>
+
+                                 
+
+                             </form>
+
+                         </div>
+
+
+
+                     </div>
+
+                 </div>
+
+             </div>
+
+         </div>
+
+     </section>
+
+     <!--  End Course detials -->
+
+
+
+    <!-- Skills section -->
+
+    <section class="skills-covered pd-tp-20 pd-btm-20">
+
+        <div class="container">
+
+            <h3 style="margin-bottom: 20px;font-weight: 500;" class="mr-btm-30">SKILLS COVERED</h3> 
+
+            <div class="list-bx1-row">
+
+                <div class=" list-box1">
+
+                    <span class="list-bx1-icon"><i class="fas fa-check"></i></span>
+
+                    <p>Python</p>       
+
+                </div>
+
+                <div class="list-box1">
+
+                    <span class="list-bx1-icon"><i class="fas fa-check"></i></span>
+
+                    <p>Flask (Blue Print) based API</p>       
+
+                </div>
+
+                <div class="list-box1">
+
+                    <span class="list-bx1-icon"><i class="fas fa-check"></i></span>
+
+                    <p>MongoDB</p>       
+
+                </div>
+
+                <div class="list-box1">
+
+                    <span class="list-bx1-icon"><i class="fas fa-check"></i></span>
+
+                    <p>HTML5 and CSS3</p>       
+
+                </div>
+
+                
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+     <!-- End Skills section -->
+
+
+
+     <!-- Skills section -->
+
+    <section class="tools-covered pd-btm-40">
+
+        <div class="container">
+
+            <h3 style="margin-bottom: 20px;font-weight: 500;" class="mr-btm-30">TOOLS COVERED</h3>
+
+            <div class="explore-sect mr-hrz-auto wtd-100">
+
+                <ul class="explr-box justify-content-start">
+
+                    
+
+                    <li class="explr-list">
+
+                        <div class="explr-icon">
+
+                            <img src="assets/images/icons/python.png" alt="">
+
+                        </div>
+
+                        <p>Python</p>
+
+                    </li>
+
+                    
+
+                    <li class="explr-list">
+
+                        <div class="explr-icon">
+
+                            <img src="assets/images/icons/HTML.png" alt="">
+
+                        </div>
+
+                        <p>HTML</p>
+
+                    </li>
+
+                    <li class="explr-list">
+
+                        <div class="explr-icon">
+
+                            <img src="assets/images/icons/CSS.png" alt="">
+
+                        </div>
+
+                        <p>CSS</p>
+
+                    </li>
+
+                    <li class="explr-list">
+
+                        <div class="explr-icon">
+
+                            <img src="assets/images/icons/mongodb.png" alt="">
+
+                        </div>
+
+                        <p>MongoDB</p>
+
+                    </li>
+
+                    <li class="explr-list">
+
+                        <div class="explr-icon">
+
+                            <img src="assets/images/icons/git.png" alt="">
+
+                        </div>
+
+                        <p>Git</p>
+
+                    </li>
+
+                
+
+                </ul>
+
+            </div>
+
+            
+
+        </div>
+
+    </section>
+
+     <!-- End Skills section -->
+
+
+
+     <!-- industry projects -->
+
+     <section class="industry-project pd-btm-80">
+
+         <div class="container">
+
+            <h4 class="mr-btm-30">Industry Project</h4>
+
+            <div class="owl-carousel owl-theme industry-slider" id="career-slider">
+
+                <div class="item">
+
+                    <div class="projects-box">
+
+                        <div class="proj-title">
+
+                            <h5>Projects 1</h5>
+
+                            <h4>A User Authentication System</h4>
+
+                        </div>
+
+                        <div class="proj-text">
+
+                            <p>In this project, you’ll create a signup or login system for users on a website. It is important because many organization's website have an authentication layer embedded in them.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="item">
+
+                    <div class="projects-box">
+
+                        <div class="proj-title">
+
+                            <h5>Projects 2</h5>
+
+                            <h4>Cloning a Web application</h4>
+
+                        </div>
+
+                        <div class="proj-text">
+
+                            <p>Cloning an existing Website like Youtube using Back-end Functions.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="item">
+
+                    <div class="projects-box">
+
+                        <div class="proj-title">
+
+                            <h5>Projects 3</h5>
+
+                            <h4>Build a Finance Application</h4>
+
+                        </div>
+
+                        <div class="proj-text">
+
+                            <p>This project helps you to sharpen your skills and, at the very least, make recruiters curious about what else you can do.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="item">
+
+                    <div class="projects-box">
+
+                        <div class="proj-title">
+
+                            <h5>Projects 4</h5>
+
+                            <h4>Build a Landing Page </h4>
+
+                        </div>
+
+                        <div class="proj-text">
+
+                            <p>As a backend developer, you need to know about web servers, HTTP, and how web pages communicate with the server.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="item">
+
+                    <div class="projects-box">
+
+                        <div class="proj-title">
+
+                            <h5>Projects 5</h5>
+
+                            <h4>Build a Weather app </h4>
+
+                        </div>
+
+                        <div class="proj-text">
+
+                            <p>We will need to set up a backend server that connects to a front end client. Can’t have a weather app with no weather data! So we will make use of a 3rd party weather API to provide data. We need to connect to that API and use the returned weather data.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="item">
+
+                    <div class="projects-box">
+
+                        <div class="proj-title">
+
+                            <h5>Projects 6</h5>
+
+                            <h4>Grocery Website</h4>
+
+                        </div>
+
+                        <div class="proj-text">
+
+                            <p>Create a dynamic and responsive grocery e-commerce web application using technologies such as React Js, Html5, Css3.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+         </div>
+
+     </section>
+
+     <!-- End industry projects -->
+
+
+
+
+
+     <!-- Certification -->
+
+     <section class="certification bg-light pd-btm-80 pd-tp-80">
+
+         <div class="container">
+
+            <div class="section-title-2 ">
+
+                <h2>Get Fabevy Certified</h2>
+
+            </div>
+
+            <div class="certification-img text-center">
+
+                <img src="assets/images/certificate/certificate-course-Back-End-Developer.jpg" alt="Certificate course Back End Developer">
+
+            </div>
+
+         </div>
+
+     </section>
+
+
+
+     <!-- Our Alumni work -->
+
+    <section class="page-sec clients pd-tp-80 pd-btm-80">
+
+        <div class="container " style="width: 80%;">
+
+            <div class="section-title-2 pd-tp-0">
+
+                <h2>Where do our Alumni work?</h2>
+
+
+
+            </div>
+
+
+
+            <div class="row justify-content-center pd-btm-0">
+
+                <div class="client col-6 col-md-4 col-lg-2">
+
+                    <img src="assets/images/client/technorucs.png" alt="" class="img-fluid">
+
+                </div>
+
+                <div class="client col-6 col-md-4 col-lg-2">
+
+                    <img src="assets/images/client/Accenture-logo.png" alt="" class="img-fluid">
+
+                </div>
+
+                <div class="client col-6 col-md-4 col-lg-2">
+
+                    <img src="assets/images/client/Agilisys-Logo-Black-RGB.png" alt="" class="img-fluid">
+
+                </div>
+
+                <div class="client col-6 col-md-4 col-lg-2">
+
+                    <img src="assets/images/client/AppViewX_Logo.jpg" alt="" class="img-fluid">
+
+                </div>
+
+                <div class="client col-6 col-md-4 col-lg-2">
+
+                    <img src="assets/images/client/1640158850317.jpg" alt="" class="img-fluid">
+
+                </div>
+
+                <div class="client col-6 col-md-4 col-lg-2">
+
+                    <img src="assets/images/client-boodskap.png" alt="" class="img-fluid">
+
+                </div>
+
+                <div class="client col-6 col-md-4 col-lg-2">
+
+                    <img src="assets/images/client-cognizant.png" alt="" class="img-fluid">
+
+                </div>
+
+                <div class="client col-6 col-md-4 col-lg-2 highlight-2">
+
+                    <img src="assets/images/client-contus.png" alt="" class="img-fluid">
+
+                </div>
+
+                <div class="client col-6 col-md-4 col-lg-2">
+
+                    <img src="assets/images/client-datayaan.png" alt="" class="img-fluid">
+
+                </div>
+
+                <div class="client col-6 col-md-4 col-lg-2">
+
+                    <img src="assets/images/client/i0SguqEj400x400-1595950266500.avif" alt="" class="img-fluid">
+
+                </div>
+
+                <div class="client col-6 col-md-4 col-lg-2">
+
+                    <img src="assets/images/client/doodleblue-footer-logo.png" alt="" class="img-fluid">
+
+                </div>
+
+                <div class="client col-6 col-md-4 col-lg-2 highlight-3">
+
+                    <img src="assets/images/client-fullpotentialsolutions.png" alt="" class="img-fluid">
+
+                </div>
+
+                <div class="client col-6 col-md-4 col-lg-2">
+
+                    <img src="assets/images/client-hexacorp.png" alt="" class="img-fluid">
+
+                </div>
+
+                <div class="client col-6 col-md-4 col-lg-2">
+
+                    <img src="assets/images/client-hogarth.png" alt="" class="img-fluid">
+
+                </div>
+
+                <div class="client col-6 col-md-4 col-lg-2">
+
+                    <img src="assets/images/client-infosys.png" alt="" class="img-fluid">
+
+                </div>
+
+                <div class="client col-6 col-md-4 col-lg-2">
+
+                    <img src="assets/images/client-mobo.png" alt="" class="img-fluid">
+
+                </div>
+
+                <div class="client col-6 col-md-4 col-lg-2">
+
+                    <img src="assets/images/client/rdoftbzurlp50yearkrj.avif" alt="" class="img-fluid">
+
+                </div>
+
+                <div class="client col-6 col-md-4 col-lg-2">
+
+                    <img src="assets/images/client-nttdata.png" alt="" class="img-fluid">
+
+                </div>
+
+                <div class="client col-6 col-md-4 col-lg-2">
+
+                    <img src="assets/images/client/logo_black.png" alt="" class="img-fluid">
+
+                </div>
+
+                <div class="client col-6 col-md-4 col-lg-2 highlight-4">
+
+                    <img src="assets/images/client-saint-gobain.png" alt="" class="img-fluid">
+
+                </div>
+
+                <div class="client col-6 col-md-4 col-lg-2">
+
+                    <img src="assets/images/client-tcs.png" alt="" class="img-fluid">
+
+                </div>
+
+                <div class="client col-6 col-md-4 col-lg-2">
+
+                    <img src="assets/images/client/download.png" alt="" class="img-fluid">
+
+                </div>
+
+                <div class="client col-6 col-md-4 col-lg-2">
+
+                    <img src="assets/images/client/download (1).png" alt="" class="img-fluid">
+
+                </div>
+
+                <div class="client col-6 col-md-4 col-lg-2">
+
+                    <img src="assets/images/client-wipro.png" alt="" class="img-fluid">
+
+                </div>
+
+                <div class="client col-6 col-md-4 col-lg-2 highlight-1">
+
+                    <img src="assets/images/client-wondersoft.png" alt="" class="img-fluid">
+
+                </div>
+
+                <div class="client col-6 col-md-4 col-lg-2">
+
+                    <img src="assets/images/client-zoho.png" alt="" class="img-fluid">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        </div>
+
+    </section>
+
+    <!-- Our Alumni work end-->
+
+
+
+     <!-- Reviews -->
+
+    <section class="review-section pd-tp-80 pd-btm-80 bg-light">
+
+         <div class="container">
+
+            <div class="section-title-2 ">
+
+                <h2>Our Training Learner Reviews</h2>
+
+            </div>
+
+            <div class="owl-carousel owl-theme" id="review-slider">
+
+                <div class="item">
+
+                    <div class="card card6">
+
+                        <div class="card-id-title">
+
+                            <img src="https://lh3.googleusercontent.com/a-/ACB-R5QlFvKH7pg2T6a5yOFSh2EtBt27ZgCXbvqxneg6=w60-h60-p-rp-mo-br100" alt="review">
+
+                            <h5>Uthra lakshmi</h5>
+
+                            <!-- <span>Front end Developer</span> -->
+
+                            <div class="review-stars">
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star"></i>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card-body">
+
+                            <p class="card-text">Fabevy is the right place where you can develop your skills. I have learned alot through this training.The trainer is very supportive and his way of teaching is awesome and very interesting. Fabevy trainees are really very lucky...Your skills will increase day by day....At the end of the training, you will have the confidence and satisfaction..I am very thankful to the great mentor of fabevy, Vel Murugan.</p>
+
+                        
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="item">
+
+                    <div class="card card6">
+
+                        <div class="card-id-title">
+
+                            <img src="https://lh3.googleusercontent.com/a-/ACB-R5RFYKw21PGpXKO4iM_XHV3QR2IOnPESc3pQhSc-UDo=w60-h60-p-rp-mo-br100" alt="review">
+
+                            <h5>Mohamed Inamul Hasan</h5>
+
+                            <!-- <span>Front end Developer</span> -->
+
+                            <div class="review-stars">
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star"></i>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card-body">
+
+                            <p class="card-text">A good place to educate yourself first and agitate that in the right place. only lucky ones will get a chance to meet the trainer Mr.vel. he is a good trainer both technically and mentally. If IT was your passion then come and join FABEVY. Tats enough.</p>
+
+                        
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="item">
+
+                    <div class="card card6">
+
+                        <div class="card-id-title">
+
+                            <img src="https://lh3.googleusercontent.com/a-/ACB-R5T28yqbP4VvRqQLtC6aAVJMDaJsd2KMpyAiAwZAqh4=w60-h60-p-rp-mo-br100" alt="review">
+
+                            <h5>Abu Mj</h5>
+
+                            <!-- <span>Front end Developer</span> -->
+
+                            <div class="review-stars">
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star"></i>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card-body">
+
+                            <p class="card-text">Hi actually when i was went to fabevy at first time i had nothing skills in my knowledge trainer trained me basic thing to experience level they treat learners very well. They explain each issues,each tags and how to code in structure way, its a good place to get a job for freshers. I also got a job from this place.</p>
+
+                        
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="item">
+
+                    <div class="card card6">
+
+                        <div class="card-id-title">
+
+                            <img src="https://lh3.googleusercontent.com/a-/ACB-R5RtevTMthYicjA3ra8GyjUG3gt88MiCf0KEJptXqg=w60-h60-p-rp-mo-br100" alt="review">
+
+                            <h5>Harish P S</h5>
+
+                            <!-- <span>Senior Software Engineer</span> -->
+
+                            <div class="review-stars">
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star"></i>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card-body">
+
+                            <p class="card-text">Good learning institute for fresher, where fresher can gain knowledge what industry needs.Before entering into the training program in fabevy, I was blank about front end development. But after completing the training I feel that I am having the skills equal to a person with industry experience.</p>
+
+                        
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="item">
+
+                    <div class="card card6">
+
+                        <div class="card-id-title">
+
+                            <img src="https://lh3.googleusercontent.com/a-/ACB-R5RvWeKJDzqD4ERFsRUGTG4J3dOPiUjC67BBBvFVEA=w60-h60-p-rp-mo-br100" alt="review">
+
+                            <h5>Firdous ahmed</h5>
+
+                            <!-- <span>Senior Software Engineer</span> -->
+
+                            <div class="review-stars">
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star"></i>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card-body">
+
+                            <p class="card-text">Excellent, good exercises, good speed, well communicated. The trainer made everyone feel very comfortable, able to contribute and take something away. The trainer supports even after the Training program. Excellent.</p>
+
+                        
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="item">
+
+                    <div class="card card6">
+
+                        <div class="card-id-title">
+
+                            <img src="https://lh3.googleusercontent.com/a-/ACB-R5QEcIeSTzMAqKisOaK_Y947rRzqx1eT9zdxqsg2QA=w60-h60-p-rp-mo-br100" alt="review">
+
+                            <h5>Anandhv raj</h5>
+
+                            <!-- <span>Senior Software Engineer</span> -->
+
+                            <div class="review-stars">
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star"></i>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card-body">
+
+                            <p class="card-text">Great learning centre for the fresher who start carrier in a right way from the beginning. Not only for the freshers even for experienced persons who need to upgrade in new technology. The person who come out after the training from Fabevey he must be industry and work ready. I congrats the team and my best wishes to the phenomenal improvement.</p>
+
+                        
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
+
+            </div>
+
+            
+
+         </div>
+
+    </section>
+
+     
+
+
+
+    
+
+
+
+    <!-- Coach for Advice -->
+
+    <section class="page-sec pd-tp-80 pd-btm-100">
+
+        <div class="sect-bg" style="background-image: url(assets/images/bg1.png);"></div>
+
+        <div class="container">
+
+            <div class="section-title-3 text-center pd-btm-60 pd-tp-60">
+
+                <h2>Ask your coach for advice!</h2>
+
+                <p class="text-center mr-btm-40">Book your first coaching session and get started today on your
+
+                    <br />journey to a fulfilling career in tech
+
+                </p>
+
+                <a href="walink.html?fabWeb01" class="btn btn-primary mr-hrz-auto " target="_blank">Chat with us NOW</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Coach for Advice end-->
+
+
+
+    <!-- Footer section -->
+
+    <footer class="footer bg-light">
+
+
+
+        <div class="container pd-tp-80 pd-btm-40">
+
+            <div class="row ft-info">
+
+                <div class="col-12">
+
+                    <h5 class="text-pink font-fam-bold">Know about Fabevy</h5>
+
+                    <p class="py-1">Fabevy provides affordable and efficient training to active jobseekers &amp; graduates who are passionate about starting their IT career. We transform jobseekers into professionals by upskilling them.</p>
+
+
+
+                    <h5 class="text-pink font-fam-bold">We Stand Out because</h5>
+
+                    <p class="py-1">We successfully provide trainees with intensive courses from industry's top mentors. Fabevy strives to make the learning experience comprehensive and accessible for job-seekers. We believe in empowering every graduate who struggle to kick-start his/her career.</p>
+
+
+
+                    <h5 class="text-pink font-fam-bold">Our Key Focus Areas</h5>
+
+                    <p class="py-1">Fabevy's main focus is to make skill-development program as economical as possible for all first-gen graduates. With our affordable &amp; placement guranteed courses we have been able to provide a platform for 100s of IT career aspirants.</p>
+
+
+
+                    <h5 class="text-pink font-fam-bold">What Makes Us Different</h5>
+
+                    <p class="py-1">Fabevy strives to focus on Placement-First programs which would ensure every trainee to land in a job after the successful completion of our progam. Industry relevant curriculum and portfolio building based learning experience differentiate Fabevy from tradition training academies.</p>
+
+                </div>
+
+                
+
+                
+
+            </div>
+
+        </div>
+
+        <div class="ft-nav-section pd-tp-60 pd-btm-20">
+
+            <div class="container">
+
+                <div class="row">
+
+                <div class="col-lg-3 col-md-6 ft-links">
+
+                    <h4>Quick Links</h4>
+
+                    <ul class="ft-nav">
+
+                        <li><a href="index.html">Home</a></li>
+
+                        <li><a href="about.html">About Us</a></li>
+
+                        <li><a href="job-guarantee-programs.html">Job Guarantee Programs</a></li>
+
+                        <li><a href="contact.html">Contact Us</a></li>
+
+                    </ul>
+
+                    
+
+                </div>
+
+
+
+                <div class="col-lg-3 col-md-6 ft-links">
+
+                    <h4>Our Programs</h4>
+
+                    <ul class="ft-nav">
+
+                        <li><a href="front-end-developer-courses.html" target="_blank">Front End Developer</a></li>
+
+                        <li><a href="backend-developer-courses.html" target="_blank">Back End Developer</a></li>
+
+                        <li><a href="full-stack-developer-course.html" target="_blank">Full Stack Developer </a></li>
+
+                        <li><a href="ui-ux-designer-course.html" target="_blank">UI/UX Designer </a></li>
+
+                        <li><a href="digital-marketing.html" target="_blank">Digital Marketing</a></li>
+
+                        <li><a href="manual-testing-course.html" target="_blank">Manual Testing</a></li>
+
+                        <li><a href="api-testing-using-python.html" target="_blank">API Testing</a></li>
+
+                    </ul>
+
+                </div>
+
+
+
+                <div class="col-lg-3 col-md-6 ft-links">
+
+                    <h4>Chennai</h4>
+
+                    <p>
+
+                        Navitha Apartments,<br>
+
+                        #44, 2nd St, MCN Nagar,<br>
+
+                        Thoraipakkam, OMR, Chennai,<br>
+
+                        Tamil Nadu - 600097
+
+                    </p>
+
+                    <p>
+
+                        <a href="tel:+91-8754011175" target="_blank">+91 - 63812 44191</a>
+
+                   </p>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 ft-links">
+
+                    <h4>Tenkasi</h4>
+
+                    <p>
+
+                        AV Complex, 10/210A, First Floor,<br>
+
+                        Surandai Main Road,<br>
+
+                        Pavoorchatram, Tenkasi,<br>
+
+                        Tamil Nadu - 627808
+
+                    </p>
+
+                    <p>
+
+                        <a href="tel:+91-9150372409" target="_blank">+91 - 91503 72409</a>
+
+                   </p>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 ft-links">
+
+                    
+
+
+
+                </div>
+
+            </div>
+
+            </div>
+
+            
+
+        </div>
+
+        <div class="ft-copyright" style="background-color: var(--fb-color-prim); color:var(--white);border-top: solid 1px var(--white);">
+
+            <div class="container">
+
+                <p class="copyright pd-tp-20 pd-btm-20">
+
+                    &copy; Copyright 2022 Fabevy Technologies. All Rights Reserved.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+<!-- Request to Syllabus / Call Back! --->
+
+<div class="modal fade request-syllabus" id="requestSyllabus" tabindex="-1" aria-hidden="true">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header justify-content-center">
+
+                <h5 class="modal-title text-center">Request to Syllabus / Call Back!</h5>
+
+                <button type="button" class="btn-close form-close-btn" id="close-enroll" data-bs-dismiss="modal" aria-label="Close">x</button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <form id="syllabus-form" class="row request-form">
+
+                    <div class="col-lg-6 form-groups mr-btm-30">
+
+                        <label>First Name<span>*</span></label>
+
+                        <input type="text" name="syllabus-fname" placeholder="Enter First Name" class="form-control syllabus-inpt"  />
+
+                        <p class="error-inpt">Enter your First Name..!</p>
+
+                    </div>
+
+                    <div class="col-lg-6 form-groups mr-btm-30">
+
+                        <label>Last Name<span>*</span></label>
+
+                        <input type="text" name="syllabus-lname" placeholder="Enter Last Name" class="form-control syllabus-inpt" />
+
+                        <p class="error-inpt">Enter your Last Name..!</p>
+
+                    </div>
+
+                    <div class="col-lg-6 form-groups mr-btm-30">
+
+                        <label>Email<span>*</span></label>
+
+                        <input type="email" name="syllabus-email" placeholder="Enter Your Email" class="form-control syllabus-inpt" />
+
+                        <p class="error-inpt">Enter your Email..!</p>
+
+                        <p class="error-email syllabus-email-err">Enter your vaild email...!</p>
+
+
+                    </div>
+
+                    <div class="col-lg-6 form-groups mr-btm-30">
+
+                        <label>City<span>*</span></label>
+
+                        <input type="text" name="syllabus-city" placeholder="Enter Your City" class="form-control syllabus-inpt" />
+
+                        <p class="error-inpt">Enter your city..!</p>
+
+                    </div>
+
+                    <div class="col-lg-6 form-groups mr-btm-30">
+
+                        <label>Mobile Number<span>*</span></label>
+
+                        <input type="number" name="syllabus-phone" class="form-control syllabus-inpt" id="syllabus-mobileNo" placeholder="Enter Phone Number" />
+
+                        <p class="error-inpt">Enter your Phone Number..!</p>
+
+                        <p class="error-no syllabus-no-err">Phone Number should be 10 digits..!</p>
+
+                    </div>
+
+                     
+
+                    <div class="col-lg-6 form-groups mr-btm-30">
+
+                        <label>looking For?<span>*</span></label>
+
+                        <select class="form-control syllabus-inpt" name="syllabus-looking-for">
+
+                            <option value="none">Select the course</option>
+
+                            <option value="Front End Development">Front End Developer</option>
+
+                            <option value="Back End Developer">Back End Developer</option>
+
+                            <option value="Full Stack Developer">Full Stack Developer</option>
+
+                            <option value="UI/UX Designer">UI/UX Designer</option>
+
+                            <option value="Manual Testing">Manual Testing</option>
+
+                            <option value="Digital Marketing">Digital Marketing</option>
+
+                            <option value="API Testing">API Testing</option>
+
+                        </select>
+
+                        <p class="error-inpt">Select the course you looking for..!</p>
+
+                    </div>
+
+                    <div class="col-12 form-groups mr-btm-30">
+
+                        <label>Message<span>*</span></label>
+
+                        <textarea placeholder="Write an business requirements..." name="syllabus-message" class="form-control syllabus-inpt" rows="5"></textarea>
+
+                        <p class="error-inpt">Enter your business requirements..!</p>
+
+                    </div>
+
+                    <div class="form-groups mr-btm-10 text-center">
+
+                        <input type="hidden" name="syllabus-page" value="bed">
+
+                        <button type="button" class="btn send-request-btn syllabus-btn" onclick="validateForm('syllabus')">ENROLL NOW</button>
+
+                    </div>
+
+                     
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div class="popup-section">
+
+    <div class="show-response">
+
+        <!-- <a href="javascript:void(0)" class="close-btns" data-target="popup-section">x</a> -->
+
+        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+
+        <p>Thanks for your Register. We will get back to you soon.</p>
+
+        <div class="download-syllabus-enroll d-none">
+
+            <p><b>We will mail you the syllabus shortly.</b></p>
+
+            <!-- <a class="btn btn-secondary btn-syllabus" id="syllabus-link"><i class="fa fa-download" aria-hidden="true"></i> Download Syllabus Now</a> -->
+
+        </div>
+
+    </div>
+
+    
+
+</div>
+
+
+
+<!-- Call back and enroll -->
+
+<div class="callback-enroll">
+
+    <div class="enroll-action">
+
+        <a href="walink.html?fabbackend" target="_blank" class="call-back"><i class="fa fa-phone" aria-hidden="true"></i> Call Our Advisor</a>    
+
+    </div>
+
+    <div class="enroll-action">
+
+        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#requestSyllabus" class="call-back">Enroll Now</a>
+
+    </div>
+
+    
+
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<script type="text/javascript" src="assets/js/owl.carousel.js"></script>
+
+<script type="text/javascript" src="assets/js/script.js"></script>
+
+<script type="text/javascript" src="assets/js/slider.js"></script>
+
+</body>
+
 </html>
